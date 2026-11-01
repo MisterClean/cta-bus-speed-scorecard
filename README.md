@@ -20,6 +20,8 @@ Open **http://localhost:8000**. Serve the directory over HTTP; opening `index.ht
 
 ## Run the analysis
 
+Requires **Python 3.11+** (DuckDB 2.0 requirement).
+
 ```sh
 python -m venv .venv
 . .venv/bin/activate

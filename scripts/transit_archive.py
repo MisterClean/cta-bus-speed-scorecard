@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validated incremental position ingestion and Parquet export. Python 3.10+, DuckDB 2.x."""
+"""Validated incremental position ingestion and Parquet export. Python 3.11+, DuckDB 2.x."""
 import argparse
 import datetime as dt
 import gzip
