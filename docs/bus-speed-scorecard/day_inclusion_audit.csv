@@ -1,0 +1,34 @@
+archive_date,dow,include_in_strict_sample,reason
+2026-09-28,Mon,true,all windows >=95% minute coverage
+2026-09-29,Tue,true,all windows >=95% minute coverage
+2026-09-30,Wed,false,MID window 91.3% observed (gap 12:44-13:01); AM 97.5%; window-level salvage possible for AM/PM
+2026-10-01,Thu,true,all windows >=95% minute coverage (AM 98.3%)
+2026-10-02,Fri,true,all windows >=95% minute coverage
+2026-10-03,Sat,false,weekend - out of scorecard scope
+2026-10-04,Sun,false,weekend - out of scorecard scope
+2026-10-05,Mon,true,all windows >=95% minute coverage
+2026-10-06,Tue,true,all windows >=95% minute coverage
+2026-10-07,Wed,true,all windows >=95% minute coverage
+2026-10-08,Thu,true,all windows >=95% minute coverage
+2026-10-09,Fri,true,all windows >=95% minute coverage
+2026-10-10,Sat,false,weekend - out of scorecard scope
+2026-10-11,Sun,false,weekend - out of scorecard scope
+2026-10-12,Mon,false,"Indigenous Peoples Day (policy exclusion, judgment call): feed is complete in all 3 windows (100% minute coverage; AM fleet 99.6% of other Mondays, route 9 AM rows 77%); evening outage starts 18:04 after PM window. Could be re-included as sensitivity"
+2026-10-13,Tue,false,PM peak window 0% observed (outage from 14:31 local to midnight); MID 98.8% ; including AM only would bias peak mix
+2026-10-14,Wed,false,PM peak window 0% observed (outage from 13:35 local to midnight); MID 86.3% ; including AM only would bias peak mix
+2026-10-15,Thu,false,PM peak window 0% observed (outage from 13:14 local to midnight); MID 80.8% ; including AM only would bias peak mix
+2026-10-16,Fri,false,PM peak window 0% observed (outage from 13:20 local to midnight); MID 83.3% ; including AM only would bias peak mix
+2026-10-17,Sat,false,weekend - out of scorecard scope
+2026-10-18,Sun,false,weekend - out of scorecard scope
+2026-10-19,Mon,true,all windows >=95% minute coverage
+2026-10-20,Tue,true,all windows >=95% minute coverage
+2026-10-21,Wed,false,"MID window 91.7% observed (two 3-min gaps 13:01-13:04, 13:47-13:50); AM/PM ok; window-level salvage possible"
+2026-10-22,Thu,true,all windows >=95% minute coverage
+2026-10-23,Fri,true,all windows >=95% minute coverage
+2026-10-24,Sat,false,weekend - out of scorecard scope
+2026-10-25,Sun,false,weekend - out of scorecard scope
+2026-10-26,Mon,true,all windows >=95% minute coverage (AM 98.3%)
+2026-10-27,Tue,true,all windows >=95% minute coverage (AM 95.0%)
+2026-10-28,Wed,true,all windows >=95% minute coverage (AM 95.8%)
+2026-10-29,Thu,true,all windows >=95% minute coverage
+2026-10-30,Fri,false,"PM window 84.2% observed (gap 17:41-18:07, 19 min inside window); AM/MID ok; window-level salvage possible for AM/MID"

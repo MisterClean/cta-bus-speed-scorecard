@@ -1,0 +1,4448 @@
+{
+ "meta": {
+  "generated_at": "2026-11-01T03:17:28+00:00",
+  "duckdb_version": "v2.0.0",
+  "archive_first": "2026-09-28",
+  "archive_last": "2026-10-30",
+  "archive_files": 33,
+  "archive_rows": 29530887,
+  "service_days": [
+   "2026-09-28",
+   "2026-09-29",
+   "2026-09-30",
+   "2026-10-01",
+   "2026-10-02",
+   "2026-10-05",
+   "2026-10-06",
+   "2026-10-07",
+   "2026-10-08",
+   "2026-10-09",
+   "2026-10-19",
+   "2026-10-20",
+   "2026-10-21",
+   "2026-10-22",
+   "2026-10-23",
+   "2026-10-26",
+   "2026-10-27",
+   "2026-10-28",
+   "2026-10-29",
+   "2026-10-30"
+  ],
+  "excluded_weekdays": {
+   "2026-10-12": "Indigenous Peoples' Day (CPS closed); excluded as a holiday, tested as a sensitivity",
+   "2026-10-13": "Collector outage 14:31 to midnight: PM rush missing",
+   "2026-10-14": "Collector outage 13:35 to midnight: PM rush missing, midday 86% covered",
+   "2026-10-15": "Collector outage 13:14 to midnight: PM rush missing, midday 81% covered",
+   "2026-10-16": "Collector outage 13:20 to midnight: PM rush missing, midday 83% covered"
+  },
+  "periods": {
+   "am": "07:00-09:00",
+   "mid": "10:00-14:00",
+   "pm": "16:00-18:00",
+   "peak": "am + pm"
+  },
+  "ridership_source": "https://data.cityofchicago.org/d/jyb9-n7fm",
+  "ridership_span": [
+   "2025-09-01",
+   "2026-08-31"
+  ],
+  "ridership_sha256": "a84a02740a7c89667926c70e031ed15644c02f9b7fea3f0f1f7b184ade97b14a",
+  "position_source": "https://data.chicagotransitalerts.app/positions/index.json",
+  "manifest": [
+   {
+    "archive_date": "2026-09-28",
+    "rows": 1056712,
+    "bytes": 38351377,
+    "sha256": "dc3b6e6c7e27cea4ee959e864ad7a5b6536e6a1c2d7fd63c49c8ca0a56113aa4"
+   },
+   {
+    "archive_date": "2026-09-29",
+    "rows": 1060921,
+    "bytes": 38513033,
+    "sha256": "165f33b80e2e5f17e756569db55df317ff09adda25a7fa50c75d77894389e63e"
+   },
+   {
+    "archive_date": "2026-09-30",
+    "rows": 1011574,
+    "bytes": 36726848,
+    "sha256": "590e8a1bb9a7e2fa507768a4ac1f7bc55bfbcd9d928b5959a2f9e4bdc9e44dbc"
+   },
+   {
+    "archive_date": "2026-10-01",
+    "rows": 1024992,
+    "bytes": 37252709,
+    "sha256": "7ffebe3288bf114bc2078a1a421ed89badcc513c6f3c67cfae681451cc958141"
+   },
+   {
+    "archive_date": "2026-10-02",
+    "rows": 1048304,
+    "bytes": 38080124,
+    "sha256": "2c9d263f66aa6f49834d228bd1fe754592b112373366cf34fff3d975ff21ca08"
+   },
+   {
+    "archive_date": "2026-10-03",
+    "rows": 784976,
+    "bytes": 28562855,
+    "sha256": "f566d59faa03d61c32c37b36863092d8e86c00a7d1d0b0ffe62a195aba7e33b2"
+   },
+   {
+    "archive_date": "2026-10-04",
+    "rows": 646727,
+    "bytes": 23713869,
+    "sha256": "b88b00e924e39d172e1b6de3dca009ccc6e0b544460212cc19e8fb60bc68ee24"
+   },
+   {
+    "archive_date": "2026-10-05",
+    "rows": 1077139,
+    "bytes": 39064678,
+    "sha256": "e2d99c2adf31a34993f1883e1fea3ab799866c35ae1e864c9e2ec976226a3172"
+   },
+   {
+    "archive_date": "2026-10-06",
+    "rows": 1080969,
+    "bytes": 39192916,
+    "sha256": "8edb8f44b19c34ea976e9d5711d8ec41358e30ce6d8f92efa3f5278e51b932af"
+   },
+   {
+    "archive_date": "2026-10-07",
+    "rows": 1079022,
+    "bytes": 39147602,
+    "sha256": "752fd33a4837c58f2eade075f3e8e3a57868c02a724fb69c5552aed70b447733"
+   },
+   {
+    "archive_date": "2026-10-08",
+    "rows": 1083620,
+    "bytes": 39284016,
+    "sha256": "cb57029f0448a3b14f64da670aa3153fe44be2c4c03922c4039c34ecddd42204"
+   },
+   {
+    "archive_date": "2026-10-09",
+    "rows": 1083932,
+    "bytes": 39280446,
+    "sha256": "bdab92f64ebedcadff122a95bbe3b7bcd3cb1f767504a2abccf63a161766b1ac"
+   },
+   {
+    "archive_date": "2026-10-10",
+    "rows": 778481,
+    "bytes": 28330286,
+    "sha256": "576d4e4c2e5213494844204f6bfee0212fb14d705921c3938b6a55b2aa89f64a"
+   },
+   {
+    "archive_date": "2026-10-11",
+    "rows": 619051,
+    "bytes": 22688156,
+    "sha256": "3edaf0a4b65f6bfda44a767022c3eb9e3c912c41cb3c4c6938c98b645b23220b"
+   },
+   {
+    "archive_date": "2026-10-12",
+    "rows": 817263,
+    "bytes": 29549748,
+    "sha256": "2c938d743ba3d7ac59984829f3df4cfd2ded9ecf6ebe8a1c841e021c97a99cb8"
+   },
+   {
+    "archive_date": "2026-10-13",
+    "rows": 576015,
+    "bytes": 20853207,
+    "sha256": "c734bd1f41cc408e89579147a59b5736c63cbcb9f213021a388906cae97e11be"
+   },
+   {
+    "archive_date": "2026-10-14",
+    "rows": 513915,
+    "bytes": 18625796,
+    "sha256": "dc9152306e754433526f99079b93581288fa9aaaeaf04350eb6cf469a36c81ec"
+   },
+   {
+    "archive_date": "2026-10-15",
+    "rows": 498702,
+    "bytes": 18087213,
+    "sha256": "b32d1ca1b0a23ada9dd7b1ed24db2e208388d1f1e2326332bb6919eabdcb579f"
+   },
+   {
+    "archive_date": "2026-10-16",
+    "rows": 498944,
+    "bytes": 18086799,
+    "sha256": "e0cc1bfb72469ea137752dcb0d931ffba8bb25aaf33975821a96687c6f436283"
+   },
+   {
+    "archive_date": "2026-10-17",
+    "rows": 465271,
+    "bytes": 16926069,
+    "sha256": "036eaaa7d51ab9c16be208c7a7d966b8b56c8b5f032e06a31ee809eb03eef9e3"
+   },
+   {
+    "archive_date": "2026-10-18",
+    "rows": 651285,
+    "bytes": 23867864,
+    "sha256": "06597c1dbaca79c6b338886188f6dc6cac8e9ba20627b45883bc0c70eddf0837"
+   },
+   {
+    "archive_date": "2026-10-19",
+    "rows": 1066237,
+    "bytes": 38694542,
+    "sha256": "5b94ccbb8a74fe8720664fab510e70b81e727c352dfe89fc069226a8dc4c9cfd"
+   },
+   {
+    "archive_date": "2026-10-20",
+    "rows": 1071854,
+    "bytes": 38889108,
+    "sha256": "0f87380c0540c810c440ef3f7b534fe85db263d5161eb9b7120035d273103581"
+   },
+   {
+    "archive_date": "2026-10-21",
+    "rows": 1055278,
+    "bytes": 38309163,
+    "sha256": "6357d301c92077db34618ac6f6c2a06a46719502586b8c36b45b97dc6cc47431"
+   },
+   {
+    "archive_date": "2026-10-22",
+    "rows": 1053375,
+    "bytes": 38199698,
+    "sha256": "aefbfd20e3eb7730cc2dcf661cd17c3eec6049de292daa68f764c913da67e8f4"
+   },
+   {
+    "archive_date": "2026-10-23",
+    "rows": 1060323,
+    "bytes": 38495289,
+    "sha256": "c062acb7f06de3ee62e89c8d7140df728def21c0f518e4f0012fe3591a2c1f1a"
+   },
+   {
+    "archive_date": "2026-10-24",
+    "rows": 781903,
+    "bytes": 28482071,
+    "sha256": "be9013a1d46281b13d45606afd881df4677624f8897787c9936ec4750da2f75c"
+   },
+   {
+    "archive_date": "2026-10-25",
+    "rows": 647013,
+    "bytes": 23768396,
+    "sha256": "7176e41f31cab5076575e6243abe60c2841fa830de1562907bc576228d66ed66"
+   },
+   {
+    "archive_date": "2026-10-26",
+    "rows": 1075995,
+    "bytes": 39026001,
+    "sha256": "239a6134b7bed982c4f73f572816380a84b78b4db2875c74e9b1d2a229b2beba"
+   },
+   {
+    "archive_date": "2026-10-27",
+    "rows": 1069625,
+    "bytes": 38819392,
+    "sha256": "7f726773c2d666de97d672fb4d9f0eff036cb695e6dcac725bc977e6cdbc9d96"
+   },
+   {
+    "archive_date": "2026-10-28",
+    "rows": 1076282,
+    "bytes": 39059344,
+    "sha256": "c43ca3cb54d6de42796b1f539ef9a777d46ef10b97d2d2edb22719d1a10d8cd6"
+   },
+   {
+    "archive_date": "2026-10-29",
+    "rows": 1083422,
+    "bytes": 39299129,
+    "sha256": "c0ec20986e19708f6e921765ccd0eea07a72261d2c651e314033115305577774"
+   },
+   {
+    "archive_date": "2026-10-30",
+    "rows": 1031765,
+    "bytes": 37473412,
+    "sha256": "efc9c406c0b86f6366d73281a93a1b31f100fcf16cc8940142da3be5bf8721c3"
+   }
+  ],
+  "sql": "-- CTA bus speed scorecard: operating (commercial) speed from Bus Tracker positions.\n-- DuckDB 2.x. Run through build.py, which opens the archive database READ-ONLY and first creates\n--   scope_days(service_day DATE)   the weekdays included in the scorecard (see build.py / README)\n--   scope_routes(route VARCHAR)    the routes processed in this batch (routes are independent)\n-- Every table below is TEMP, so nothing is written to the archive database.\n--\n-- Speed definition (operating or \"commercial\" speed, stops included): distance along the route pattern\n-- (pdist, feet) / GPS-fix elapsed time (vehicle_ts), including time at bus stops and traffic signals,\n-- excluding terminal layovers, long gaps and mid-route stand-stills of 10+ minutes. Pairs are summed as\n-- sum(feet) / sum(seconds) (space-mean speed); build.py then weights ~220 m cells identically across periods.\n-- Thresholds are tagged [T1]..[T8] and documented in docs/bus-speed-scorecard.md.\n\n-- 0. Scope: weekday service days chosen in build.py. Every route is kept for system context.\nCREATE OR REPLACE TEMP TABLE b AS\nSELECT route, vehicle_id vid, pid, sched_start_date ssd, sched_start_sec sss,\n       vehicle_ts vts, ts, pdist, lat, lon, destination\nFROM positions_raw\nWHERE kind = 'bus' AND archive_date IN (SELECT service_day FROM scope_days)\n  AND route IN (SELECT route FROM scope_routes);\n\n-- 1. Fix dedup. A bus whose GPS fix is frozen repeats the same vehicle_ts on later polls with\n--    identical position (190,605 such rows across the archive). Keep one row per trip key and fix time.\nCREATE OR REPLACE TEMP TABLE f AS\nSELECT route, vid, pid, ssd, sss, vts, min(pdist) pdist, any_value(lat) lat, any_value(lon) lon\nFROM b GROUP BY route, vid, pid, ssd, sss, vts;\n\n-- 2. Trip key = (vehicle, pattern, scheduled service date, scheduled start second) [T0].\n--    pdist is measured along one pattern, so pairs are never formed across a key change.\nCREATE OR REPLACE TEMP TABLE tr AS\nSELECT route, vid, pid, ssd, sss, arg_min(pdist, vts) pfirst, max(pdist) pmax,\n       min(vts) tmin, max(vts) tmax, count(*) fixes\nFROM f GROUP BY route, vid, pid, ssd, sss;\n\n-- 3. Pattern inclusion [T7]. Pattern length = p90 of per-trip max pdist. Drop short connector or\n--    pull-in patterns (< 50% of the route's longest well-populated pattern) and rare patterns (< 30 trips).\nCREATE OR REPLACE TEMP TABLE ptn AS\nWITH p AS (SELECT route, pid, count(*) ntr, quantile_cont(pmax, 0.9) plen FROM tr GROUP BY route, pid),\n     r AS (SELECT route, coalesce(max(plen) FILTER (WHERE ntr >= 200), max(plen)) rmax FROM p GROUP BY route)\nSELECT p.*, r.rmax, (p.plen >= 0.5 * r.rmax AND p.ntr >= 30) incl FROM p JOIN r USING (route);\n\n-- 4. Terminal layover trim [T1]: measure each trip from the first fix more than 500 ft past its\n--    starting point to the first fix within 500 ft of its furthest point.\nCREATE OR REPLACE TEMP TABLE win AS\nSELECT t.route, t.vid, t.pid, t.ssd, t.sss,\n       coalesce(min(f.vts) FILTER (WHERE f.pdist > t.pfirst + 500), min(f.vts)) dep,\n       coalesce(min(f.vts) FILTER (WHERE f.pdist >= t.pmax - 500), max(f.vts)) arr\nFROM tr t JOIN f USING (route, vid, pid, ssd, sss)\nGROUP BY ALL;\n\n-- 5. Consecutive-fix pairs within a trip, with the straight-line distance between the two GPS points.\nCREATE OR REPLACE TEMP TABLE pr AS\nSELECT route, vid, pid, ssd, sss,\n       lag(vts) OVER w t0, vts t1, lag(pdist) OVER w p0, pdist p1,\n       lag(lat) OVER w lat0, lat lat1, lag(lon) OVER w lon0, lon lon1,\n       (vts - lag(vts) OVER w) / 1000.0 dt,\n       pdist - lag(pdist) OVER w dd,\n       3.28084 * 111320 * sqrt(power(lat - lag(lat) OVER w, 2)\n            + power(cos(radians(lat)) * (lon - lag(lon) OVER w), 2)) crow\nFROM f WINDOW w AS (PARTITION BY route, vid, pid, ssd, sss ORDER BY vts);\n\n-- 6. Flag every pair with the reason it would be excluded (flags overlap; used for the QA funnel).\nCREATE OR REPLACE TEMP TABLE prf AS\nSELECT p.*, n.incl pattern_ok,\n       (p.t0 >= w.dep AND p.t1 <= w.arr) in_window,          -- [T1] layover trim\n       p.dt <= 180 gap_ok,                                    -- [T3] do not bridge gaps > 180 s\n       p.dd >= 0 forward_ok,                                  -- [T4] drop the 0.16% backward snaps\n       p.dd <= 2 * p.crow + 1500 geometry_ok,                 -- [T5] pdist jump must be supported by GPS\n       (p.dd / p.dt) * 3600 / 5280 <= 80 speed_ok             -- [T6] absolute backstop, mph\nFROM pr p\nJOIN win w USING (route, vid, pid, ssd, sss)\nJOIN ptn n USING (route, pid)\nWHERE p.t0 IS NOT NULL;\n\nCREATE OR REPLACE TEMP TABLE kp0 AS\nSELECT *, sum(CASE WHEN abs(dd) <= 100 THEN 0 ELSE 1 END)\n            OVER (PARTITION BY route, vid, pid, ssd, sss ORDER BY t1 ROWS UNBOUNDED PRECEDING) grp\nFROM prf\nWHERE pattern_ok AND in_window AND gap_ok AND forward_ok AND geometry_ok AND speed_ok;\n\n-- 7. Mid-route stand-stills [T2]: drop runs of pairs moving <= 100 ft that total >= 600 s\n--    (breakdowns, holds, buses parked while still logged in). Ordinary stop and signal dwell stays.\nCREATE OR REPLACE TEMP TABLE standstill AS\nSELECT route, vid, pid, ssd, sss, grp FROM kp0 WHERE abs(dd) <= 100\nGROUP BY ALL HAVING sum(dt) >= 600;\n\nCREATE OR REPLACE TEMP TABLE kp AS\nSELECT k.*,\n       timezone('America/Chicago', to_timestamp((k.t0 + k.t1) / 2000.0)) lm   -- local midpoint [T8]\nFROM kp0 k\nANTI JOIN standstill s\n  ON s.route = k.route AND s.vid = k.vid AND s.pid = k.pid AND s.ssd = k.ssd AND s.sss = k.sss\n AND s.grp = k.grp AND abs(k.dd) <= 100;\n\n-- 8. Outputs ----------------------------------------------------------------------------------------\n-- 8a. Route x service day x local hour sums. Every period, hourly, daily and bootstrap figure is\n--     derived from this table in build.py, so all charts share one computation.\nCREATE OR REPLACE TEMP TABLE out_route_day_hour AS\nSELECT route, CAST(lm AS DATE) service_day, hour(lm) hr,\n       sum(dd) feet, sum(dt) AS seconds, count(*) pairs,\n       count(DISTINCT (vid, pid, ssd, sss)) trips\nFROM kp\nWHERE CAST(lm AS DATE) IN (SELECT service_day FROM scope_days)\nGROUP BY ALL;\n\n-- 8b. ~220 m GPS-midpoint cells by route, service day and period. Used for the map and for\n--     fixed-segment route speeds (the same cells, with the same distance weights, in every period).\nCREATE OR REPLACE TEMP TABLE out_cells AS\nSELECT route, CAST(lm AS DATE) service_day,\n       round((lat0 + lat1) / 2 / 0.002) * 0.002 cell_lat,\n       round((lon0 + lon1) / 2 / 0.0027) * 0.0027 cell_lon,\n       CASE WHEN hour(lm) IN (7, 8) THEN 'am' WHEN hour(lm) IN (16, 17) THEN 'pm'\n            WHEN hour(lm) BETWEEN 10 AND 13 THEN 'mid' END period,\n       sum(dd) feet, sum(dt) AS seconds, count(*) pairs\nFROM kp\nWHERE CAST(lm AS DATE) IN (SELECT service_day FROM scope_days)\n  AND (hour(lm) IN (7, 8, 16, 17) OR hour(lm) BETWEEN 10 AND 13)\nGROUP BY ALL;\n\n-- 8c. Patterns: inclusion decisions and lengths (used for end-to-end ride times).\nCREATE OR REPLACE TEMP TABLE pdest AS SELECT pid, arg_max(destination, n) destination FROM (SELECT pid, destination, count(*) n FROM b GROUP BY ALL) GROUP BY pid;\nCREATE OR REPLACE TEMP TABLE out_patterns AS\nSELECT p.route, p.pid, any_value(d.destination) destination, p.ntr trips, round(p.plen) length_ft,\n       round(p.rmax) route_max_ft, p.incl included,\n       any_value(f.lat ORDER BY f.pdist, f.vts, f.vid) start_lat, any_value(f.lon ORDER BY f.pdist, f.vts, f.vid) start_lon,\n       any_value(f.lat ORDER BY f.pdist DESC, f.vts, f.vid) end_lat, any_value(f.lon ORDER BY f.pdist DESC, f.vts, f.vid) end_lon\nFROM ptn p JOIN f USING (route, pid) LEFT JOIN pdest d USING (pid)\nGROUP BY p.route, p.pid, p.ntr, p.plen, p.rmax, p.incl;\n\n-- 8e. Quarter-mile bins along each pattern (by pair midpoint pdist), for \"slowest stretch\" by route.\nCREATE OR REPLACE TEMP TABLE out_bins AS\nSELECT route, pid, CAST(floor((p0 + p1) / 2 / 1320) AS INTEGER) bin,\n       CASE WHEN hour(lm) IN (7, 8) THEN 'am' WHEN hour(lm) IN (16, 17) THEN 'pm'\n            WHEN hour(lm) BETWEEN 10 AND 13 THEN 'mid' END period,\n       sum(dd) feet, sum(dt) AS seconds, count(*) pairs,\n       avg((lat0 + lat1) / 2) lat, avg((lon0 + lon1) / 2) lon\nFROM kp\nWHERE CAST(lm AS DATE) IN (SELECT service_day FROM scope_days)\n  AND (hour(lm) IN (7, 8, 16, 17) OR hour(lm) BETWEEN 10 AND 13)\nGROUP BY ALL;\n\n-- 8d. QA funnel: how much each rule removes, per route (flags overlap, so they are not additive).\nCREATE OR REPLACE TEMP TABLE out_qa AS\nWITH raw AS (SELECT route, count(*) raw_rows FROM b GROUP BY route),\n     dd AS (SELECT route, count(*) dedup_fixes FROM f GROUP BY route),\n     trips AS (SELECT route, count(*) trips FROM tr GROUP BY route),\n     pf AS (\n       SELECT route, count(*) pairs, sum(dt) pair_seconds,\n              count(*) FILTER (WHERE NOT pattern_ok) pairs_short_pattern,\n              count(*) FILTER (WHERE NOT in_window) pairs_layover,\n              sum(dt) FILTER (WHERE NOT in_window) seconds_layover,\n              count(*) FILTER (WHERE NOT gap_ok) pairs_long_gap,\n              sum(dt) FILTER (WHERE NOT gap_ok) seconds_long_gap,\n              count(*) FILTER (WHERE NOT forward_ok) pairs_backward,\n              count(*) FILTER (WHERE NOT geometry_ok) pairs_geometry,\n              count(*) FILTER (WHERE NOT speed_ok) pairs_over_80mph\n       FROM prf GROUP BY route),\n     k0 AS (SELECT route, count(*) pairs_after_filters FROM kp0 GROUP BY route),\n     k AS (SELECT route, count(*) pairs_kept, sum(dt) seconds_kept, sum(dd) feet_kept FROM kp GROUP BY route)\nSELECT * FROM raw JOIN dd USING (route) JOIN trips USING (route) JOIN pf USING (route)\nJOIN k0 USING (route) JOIN k USING (route);\n"
+ },
+ "system": {
+  "method": "fixed-segment",
+  "top20_pooled": {
+   "am": 8.8664,
+   "mid": 9.0425,
+   "pm": 7.794,
+   "peak": 8.3028
+  },
+  "other_routes_pooled": {
+   "am": 9.6616,
+   "mid": 10.1672,
+   "pm": 8.6247,
+   "peak": 9.1395
+  },
+  "other_routes": [
+   "103",
+   "106",
+   "11",
+   "111",
+   "112",
+   "115",
+   "119",
+   "126",
+   "15",
+   "152",
+   "155",
+   "156",
+   "157",
+   "18",
+   "201",
+   "21",
+   "24",
+   "28",
+   "29",
+   "30",
+   "34",
+   "35",
+   "37",
+   "39",
+   "44",
+   "49B",
+   "50",
+   "52",
+   "52A",
+   "53A",
+   "54",
+   "54B",
+   "55",
+   "56",
+   "57",
+   "59",
+   "62",
+   "65",
+   "67",
+   "7",
+   "70",
+   "71",
+   "73",
+   "74",
+   "75",
+   "76",
+   "78",
+   "80",
+   "81",
+   "81W",
+   "84",
+   "85",
+   "86",
+   "87",
+   "8A",
+   "90",
+   "91",
+   "92",
+   "93",
+   "94",
+   "95",
+   "97"
+  ],
+  "other_routes_rule": "Non-express routes outside the top 20 with at least 100 vehicle-hours in each of AM, midday and PM",
+  "top20_all_service": {
+   "am": 8.8325,
+   "mid": 9.1675,
+   "pm": 7.7389,
+   "peak": 8.2496
+  },
+  "other_routes_all_service": {
+   "am": 9.6412,
+   "mid": 10.2827,
+   "pm": 8.5917,
+   "peak": 9.1054
+  },
+  "route_median": {
+   "am": 9.338,
+   "mid": 10.0018,
+   "pm": 8.3938,
+   "peak": 8.8804
+  },
+  "route_count": 82,
+  "top20_peak_ranks": {
+   "53": 40,
+   "9": 49,
+   "79": 45,
+   "66": 9,
+   "8": 29,
+   "3": 42,
+   "77": 17,
+   "4": 56,
+   "20": 22,
+   "49": 48,
+   "22": 7,
+   "82": 23,
+   "63": 36,
+   "151": 5,
+   "72": 11,
+   "60": 16,
+   "146": 18,
+   "36": 2,
+   "12": 31,
+   "47": 46
+  },
+  "top20_hourly": [
+   12.155,
+   10.858,
+   8.952,
+   8.719,
+   9.487,
+   9.519,
+   9.242,
+   9.011,
+   8.92,
+   8.543,
+   7.783,
+   7.671,
+   7.808,
+   8.607,
+   9.7,
+   10.51,
+   10.909,
+   11.227
+  ],
+  "other_routes_hourly": [
+   13.133,
+   11.757,
+   9.719,
+   9.563,
+   10.5,
+   10.659,
+   10.399,
+   10.101,
+   9.989,
+   9.483,
+   8.533,
+   8.499,
+   8.692,
+   9.495,
+   10.66,
+   11.588,
+   12.077,
+   12.525
+  ],
+  "counts_top20": {
+   "raw_rows": 8266110,
+   "dedup_fixes": 8217208,
+   "trips": 112821,
+   "pairs": 8104387,
+   "pairs_kept": 6882879,
+   "vehicle_hours_kept": 115163,
+   "miles_kept": 1085305,
+   "share_time_layover": 0.1345,
+   "share_time_long_gap": 0.0284,
+   "fixed_segment_coverage": 0.9921
+  },
+  "regions": {
+   "loop": {
+    "label": "The Loop (Lake St to Congress, Wacker to Michigan)",
+    "box": [
+     41.8745,
+     41.8865,
+     -87.6375,
+     -87.6235
+    ],
+    "am": 5.789,
+    "mid": 5.379,
+    "pm": 4.596
+   },
+   "lsd_146": {
+    "label": "Route 146 on Lake Shore Drive (Division to Belmont)",
+    "box": [
+     41.903,
+     41.937,
+     -87.637,
+     -87.6
+    ],
+    "am": 28.402,
+    "mid": 38.036,
+    "pm": 28.622
+   }
+  }
+ },
+ "routes": [
+  {
+   "rank": 1,
+   "route": "53",
+   "name": "Pulaski",
+   "avg_weekday_rides": 18174,
+   "total_rides_12mo": 5903505,
+   "pattern_miles": 17.17,
+   "fixed_segment_cells": 128,
+   "fixed_segment_coverage": 0.9997,
+   "am_mph": 9.3423,
+   "am_mph_all_service": 9.3512,
+   "am_vehicle_hours": 917,
+   "am_ci": [
+    9.216,
+    9.461
+   ],
+   "mid_mph": 9.7784,
+   "mid_mph_all_service": 9.8233,
+   "mid_vehicle_hours": 1729,
+   "mid_ci": [
+    9.731,
+    9.821
+   ],
+   "pm_mph": 8.327,
+   "pm_mph_all_service": 8.2652,
+   "pm_vehicle_hours": 998,
+   "pm_ci": [
+    8.206,
+    8.426
+   ],
+   "peak_mph": 8.8218,
+   "peak_mph_all_service": 8.7851,
+   "peak_vehicle_hours": 1915,
+   "peak_ci": [
+    8.733,
+    8.902
+   ],
+   "penalty": 0.0978,
+   "penalty_ci": [
+    0.0891,
+    0.1065
+   ],
+   "pm_penalty": 0.1484,
+   "pm_penalty_ci": [
+    0.1384,
+    0.1596
+   ],
+   "am_penalty": 0.0446,
+   "am_penalty_ci": [
+    0.0315,
+    0.0574
+   ],
+   "peak_minutes_end_to_end": 116.8,
+   "mid_minutes_end_to_end": 105.3,
+   "hourly": [
+    13.05,
+    11.32,
+    9.03,
+    9.67,
+    10.34,
+    10.26,
+    9.92,
+    9.69,
+    9.47,
+    9.04,
+    8.06,
+    8.11,
+    8.43,
+    9.12,
+    10.7,
+    11.6,
+    12.54,
+    13.43
+   ],
+   "street": "Pulaski",
+   "slowest_stretch_rush": [
+    {
+     "pid": "28350",
+     "toward": "Ford City",
+     "mph": 5.216,
+     "note": null,
+     "where": "Pulaski, at Irving Park",
+     "start": [
+      41.95562,
+      -87.72767
+     ],
+     "end": [
+      41.95255,
+      -87.72764
+     ],
+     "pairs": 2740
+    },
+    {
+     "pid": "28346",
+     "toward": "Peterson",
+     "mph": 5.81,
+     "note": null,
+     "where": "Pulaski, at 51st",
+     "start": [
+      41.80014,
+      -87.72434
+     ],
+     "end": [
+      41.80172,
+      -87.72356
+     ],
+     "pairs": 2295
+    }
+   ],
+   "qa": {
+    "raw_rows": 635260,
+    "dedup_fixes": 632760,
+    "trips": 6724,
+    "pairs": 626036,
+    "pairs_kept": 519708,
+    "share_time_layover": 0.1406,
+    "share_time_long_gap": 0.0212,
+    "pairs_backward": 748,
+    "pairs_geometry": 103,
+    "pairs_short_pattern": 20361
+   }
+  },
+  {
+   "rank": 2,
+   "route": "9",
+   "name": "Ashland",
+   "avg_weekday_rides": 17832,
+   "total_rides_12mo": 6213802,
+   "pattern_miles": 17.57,
+   "fixed_segment_cells": 134,
+   "fixed_segment_coverage": 0.9699,
+   "am_mph": 9.8883,
+   "am_mph_all_service": 9.9985,
+   "am_vehicle_hours": 790,
+   "am_ci": [
+    9.786,
+    9.976
+   ],
+   "mid_mph": 10.1132,
+   "mid_mph_all_service": 10.1879,
+   "mid_vehicle_hours": 1507,
+   "mid_ci": [
+    10.06,
+    10.159
+   ],
+   "pm_mph": 8.6272,
+   "pm_mph_all_service": 8.6908,
+   "pm_vehicle_hours": 911,
+   "pm_ci": [
+    8.48,
+    8.766
+   ],
+   "peak_mph": 9.233,
+   "peak_mph_all_service": 9.2981,
+   "peak_vehicle_hours": 1702,
+   "peak_ci": [
+    9.121,
+    9.336
+   ],
+   "penalty": 0.087,
+   "penalty_ci": [
+    0.0742,
+    0.1
+   ],
+   "pm_penalty": 0.1469,
+   "pm_penalty_ci": [
+    0.132,
+    0.1624
+   ],
+   "am_penalty": 0.0222,
+   "am_penalty_ci": [
+    0.0102,
+    0.0357
+   ],
+   "peak_minutes_end_to_end": 114.2,
+   "mid_minutes_end_to_end": 104.2,
+   "hourly": [
+    12.72,
+    11.73,
+    10.03,
+    9.97,
+    10.64,
+    10.57,
+    10.28,
+    9.93,
+    10.0,
+    9.52,
+    8.52,
+    8.56,
+    8.84,
+    9.62,
+    10.88,
+    11.28,
+    11.56,
+    11.65
+   ],
+   "street": "Ashland",
+   "slowest_stretch_rush": [
+    {
+     "pid": "9372",
+     "toward": "Ravenswood Metra",
+     "mph": 4.633,
+     "note": null,
+     "where": "Ashland, Polk to Congress",
+     "start": [
+      41.87235,
+      -87.66645
+     ],
+     "end": [
+      41.87496,
+      -87.66653
+     ],
+     "pairs": 216
+    },
+    {
+     "pid": "9717",
+     "toward": "95th",
+     "mph": 5.527,
+     "note": null,
+     "where": "Ashland, at Belmont",
+     "start": [
+      41.94258,
+      -87.66874
+     ],
+     "end": [
+      41.93974,
+      -87.66867
+     ],
+     "pairs": 925
+    }
+   ],
+   "qa": {
+    "raw_rows": 536228,
+    "dedup_fixes": 531064,
+    "trips": 6669,
+    "pairs": 524395,
+    "pairs_kept": 441413,
+    "share_time_layover": 0.1257,
+    "share_time_long_gap": 0.0273,
+    "pairs_backward": 693,
+    "pairs_geometry": 281,
+    "pairs_short_pattern": 21133
+   }
+  },
+  {
+   "rank": 3,
+   "route": "79",
+   "name": "79th",
+   "avg_weekday_rides": 17662,
+   "total_rides_12mo": 5806639,
+   "pattern_miles": 11.37,
+   "fixed_segment_cells": 83,
+   "fixed_segment_coverage": 0.9985,
+   "am_mph": 9.5264,
+   "am_mph_all_service": 9.493,
+   "am_vehicle_hours": 860,
+   "am_ci": [
+    9.464,
+    9.59
+   ],
+   "mid_mph": 9.4339,
+   "mid_mph_all_service": 9.5495,
+   "mid_vehicle_hours": 1442,
+   "mid_ci": [
+    9.383,
+    9.478
+   ],
+   "pm_mph": 8.736,
+   "pm_mph_all_service": 8.6515,
+   "pm_vehicle_hours": 1041,
+   "pm_ci": [
+    8.667,
+    8.802
+   ],
+   "peak_mph": 9.0962,
+   "peak_mph_all_service": 9.0321,
+   "peak_vehicle_hours": 1900,
+   "peak_ci": [
+    9.042,
+    9.154
+   ],
+   "penalty": 0.0358,
+   "penalty_ci": [
+    0.0304,
+    0.0415
+   ],
+   "pm_penalty": 0.074,
+   "pm_penalty_ci": [
+    0.0683,
+    0.0802
+   ],
+   "am_penalty": -0.0098,
+   "am_penalty_ci": [
+    -0.0172,
+    -0.0022
+   ],
+   "peak_minutes_end_to_end": 75.0,
+   "mid_minutes_end_to_end": 72.3,
+   "hourly": [
+    12.87,
+    11.46,
+    9.62,
+    9.37,
+    9.94,
+    9.99,
+    9.65,
+    9.45,
+    9.11,
+    8.76,
+    8.35,
+    8.49,
+    8.82,
+    9.1,
+    9.71,
+    10.67,
+    11.03,
+    12.09
+   ],
+   "street": "79th",
+   "slowest_stretch_rush": [
+    {
+     "pid": "1612",
+     "toward": "Lakefront",
+     "mph": 5.102,
+     "note": null,
+     "where": "79th, at Western",
+     "start": [
+      41.75009,
+      -87.68445
+     ],
+     "end": [
+      41.75056,
+      -87.68184
+     ],
+     "pairs": 2089
+    },
+    {
+     "pid": "1599",
+     "toward": "Ford City",
+     "mph": 6.301,
+     "note": null,
+     "where": "79th, at Central Park",
+     "start": [
+      41.74969,
+      -87.71451
+     ],
+     "end": [
+      41.74962,
+      -87.7201
+     ],
+     "pairs": 2510
+    }
+   ],
+   "qa": {
+    "raw_rows": 560261,
+    "dedup_fixes": 557354,
+    "trips": 8906,
+    "pairs": 548448,
+    "pairs_kept": 445342,
+    "share_time_layover": 0.1528,
+    "share_time_long_gap": 0.0292,
+    "pairs_backward": 1179,
+    "pairs_geometry": 209,
+    "pairs_short_pattern": 23490
+   }
+  },
+  {
+   "rank": 4,
+   "route": "66",
+   "name": "Chicago",
+   "avg_weekday_rides": 16584,
+   "total_rides_12mo": 5500358,
+   "pattern_miles": 9.43,
+   "fixed_segment_cells": 74,
+   "fixed_segment_coverage": 0.9991,
+   "am_mph": 8.0383,
+   "am_mph_all_service": 8.0033,
+   "am_vehicle_hours": 999,
+   "am_ci": [
+    7.928,
+    8.142
+   ],
+   "mid_mph": 8.1846,
+   "mid_mph_all_service": 8.2258,
+   "mid_vehicle_hours": 1421,
+   "mid_ci": [
+    8.124,
+    8.245
+   ],
+   "pm_mph": 6.9792,
+   "pm_mph_all_service": 6.9553,
+   "pm_vehicle_hours": 1113,
+   "pm_ci": [
+    6.745,
+    7.176
+   ],
+   "peak_mph": 7.477,
+   "peak_mph_all_service": 7.4512,
+   "peak_vehicle_hours": 2112,
+   "peak_ci": [
+    7.321,
+    7.618
+   ],
+   "penalty": 0.0865,
+   "penalty_ci": [
+    0.0708,
+    0.1035
+   ],
+   "pm_penalty": 0.1473,
+   "pm_penalty_ci": [
+    0.1256,
+    0.1739
+   ],
+   "am_penalty": 0.0179,
+   "am_penalty_ci": [
+    0.0047,
+    0.0307
+   ],
+   "peak_minutes_end_to_end": 75.7,
+   "mid_minutes_end_to_end": 69.1,
+   "hourly": [
+    10.33,
+    9.52,
+    8.24,
+    7.77,
+    8.42,
+    8.46,
+    8.33,
+    8.05,
+    8.07,
+    7.7,
+    7.14,
+    6.92,
+    6.99,
+    7.96,
+    8.78,
+    9.31,
+    9.71,
+    9.95
+   ],
+   "street": "Chicago",
+   "slowest_stretch_rush": [
+    {
+     "pid": "6665",
+     "toward": "Austin",
+     "mph": 4.257,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.89597,
+      -87.63378
+     ],
+     "end": [
+      41.89245,
+      -87.63432
+     ],
+     "pairs": 5370
+    },
+    {
+     "pid": "6662",
+     "toward": "Navy Pier",
+     "mph": 4.92,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.89658,
+      -87.62189
+     ],
+     "end": [
+      41.89417,
+      -87.62031
+     ],
+     "pairs": 5507
+    }
+   ],
+   "qa": {
+    "raw_rows": 530530,
+    "dedup_fixes": 528745,
+    "trips": 8676,
+    "pairs": 520069,
+    "pairs_kept": 438965,
+    "share_time_layover": 0.1363,
+    "share_time_long_gap": 0.018,
+    "pairs_backward": 772,
+    "pairs_geometry": 67,
+    "pairs_short_pattern": 12984
+   }
+  },
+  {
+   "rank": 5,
+   "route": "8",
+   "name": "Halsted",
+   "avg_weekday_rides": 15962,
+   "total_rides_12mo": 5176659,
+   "pattern_miles": 14.85,
+   "fixed_segment_cells": 112,
+   "fixed_segment_coverage": 0.9996,
+   "am_mph": 8.9373,
+   "am_mph_all_service": 8.8247,
+   "am_vehicle_hours": 1075,
+   "am_ci": [
+    8.845,
+    9.018
+   ],
+   "mid_mph": 9.0389,
+   "mid_mph_all_service": 9.159,
+   "mid_vehicle_hours": 1481,
+   "mid_ci": [
+    8.99,
+    9.079
+   ],
+   "pm_mph": 7.7727,
+   "pm_mph_all_service": 7.7448,
+   "pm_vehicle_hours": 1039,
+   "pm_ci": [
+    7.628,
+    7.9
+   ],
+   "peak_mph": 8.3795,
+   "peak_mph_all_service": 8.2941,
+   "peak_vehicle_hours": 2114,
+   "peak_ci": [
+    8.275,
+    8.471
+   ],
+   "penalty": 0.073,
+   "penalty_ci": [
+    0.0606,
+    0.086
+   ],
+   "pm_penalty": 0.1401,
+   "pm_penalty_ci": [
+    0.1246,
+    0.157
+   ],
+   "am_penalty": 0.0112,
+   "am_penalty_ci": [
+    -0.0003,
+    0.0233
+   ],
+   "peak_minutes_end_to_end": 106.3,
+   "mid_minutes_end_to_end": 98.6,
+   "hourly": [
+    11.75,
+    10.76,
+    9.02,
+    8.64,
+    9.61,
+    9.41,
+    9.22,
+    9.09,
+    8.93,
+    8.69,
+    8.1,
+    7.62,
+    7.86,
+    8.74,
+    9.6,
+    10.13,
+    10.22,
+    10.55
+   ],
+   "street": "Halsted",
+   "slowest_stretch_rush": [
+    {
+     "pid": "9368",
+     "toward": "79th",
+     "mph": 3.794,
+     "note": "detour around Halsted St",
+     "where": "Division, Racine to Halsted",
+     "start": [
+      41.9037,
+      -87.65032
+     ],
+     "end": [
+      41.90355,
+      -87.65461
+     ],
+     "pairs": 4088
+    },
+    {
+     "pid": "9376",
+     "toward": "Waveland/Broadway",
+     "mph": 4.415,
+     "note": null,
+     "where": "Halsted, at 26th",
+     "start": [
+      41.8452,
+      -87.6465
+     ],
+     "end": [
+      41.84683,
+      -87.6475
+     ],
+     "pairs": 2705
+    }
+   ],
+   "qa": {
+    "raw_rows": 501855,
+    "dedup_fixes": 499512,
+    "trips": 5274,
+    "pairs": 494238,
+    "pairs_kept": 418817,
+    "share_time_layover": 0.1336,
+    "share_time_long_gap": 0.0274,
+    "pairs_backward": 383,
+    "pairs_geometry": 153,
+    "pairs_short_pattern": 15178
+   }
+  },
+  {
+   "rank": 6,
+   "route": "3",
+   "name": "King Drive",
+   "avg_weekday_rides": 15116,
+   "total_rides_12mo": 5040491,
+   "pattern_miles": 13.69,
+   "fixed_segment_cells": 106,
+   "fixed_segment_coverage": 0.9972,
+   "am_mph": 9.5047,
+   "am_mph_all_service": 9.5088,
+   "am_vehicle_hours": 755,
+   "am_ci": [
+    9.411,
+    9.598
+   ],
+   "mid_mph": 9.415,
+   "mid_mph_all_service": 9.438,
+   "mid_vehicle_hours": 1173,
+   "mid_ci": [
+    9.339,
+    9.479
+   ],
+   "pm_mph": 8.4081,
+   "pm_mph_all_service": 8.417,
+   "pm_vehicle_hours": 852,
+   "pm_ci": [
+    8.257,
+    8.536
+   ],
+   "peak_mph": 8.9224,
+   "peak_mph_all_service": 8.93,
+   "peak_vehicle_hours": 1608,
+   "peak_ci": [
+    8.825,
+    9.015
+   ],
+   "penalty": 0.0523,
+   "penalty_ci": [
+    0.0429,
+    0.0615
+   ],
+   "pm_penalty": 0.1069,
+   "pm_penalty_ci": [
+    0.096,
+    0.1193
+   ],
+   "am_penalty": -0.0095,
+   "am_penalty_ci": [
+    -0.0224,
+    0.002
+   ],
+   "peak_minutes_end_to_end": 92.0,
+   "mid_minutes_end_to_end": 87.2,
+   "hourly": [
+    12.3,
+    10.93,
+    9.89,
+    9.15,
+    9.61,
+    9.75,
+    9.49,
+    9.34,
+    9.17,
+    8.98,
+    8.67,
+    8.29,
+    8.54,
+    9.62,
+    10.23,
+    10.5,
+    10.88,
+    11.09
+   ],
+   "street": "King Dr",
+   "slowest_stretch_rush": [
+    {
+     "pid": "18415",
+     "toward": "95th Red Line",
+     "mph": 4.603,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88385,
+      -87.62454
+     ],
+     "end": [
+      41.87973,
+      -87.62443
+     ],
+     "pairs": 3823
+    },
+    {
+     "pid": "18414",
+     "toward": "Michigan/Chicago",
+     "mph": 5.33,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88147,
+      -87.62423
+     ],
+     "end": [
+      41.88507,
+      -87.62438
+     ],
+     "pairs": 2574
+    }
+   ],
+   "qa": {
+    "raw_rows": 424222,
+    "dedup_fixes": 421780,
+    "trips": 4853,
+    "pairs": 416927,
+    "pairs_kept": 358371,
+    "share_time_layover": 0.1392,
+    "share_time_long_gap": 0.0303,
+    "pairs_backward": 348,
+    "pairs_geometry": 128,
+    "pairs_short_pattern": 3014
+   }
+  },
+  {
+   "rank": 7,
+   "route": "77",
+   "name": "Belmont",
+   "avg_weekday_rides": 14716,
+   "total_rides_12mo": 4824107,
+   "pattern_miles": 10.73,
+   "fixed_segment_cells": 81,
+   "fixed_segment_coverage": 0.9994,
+   "am_mph": 8.4325,
+   "am_mph_all_service": 8.2896,
+   "am_vehicle_hours": 800,
+   "am_ci": [
+    8.266,
+    8.568
+   ],
+   "mid_mph": 9.3879,
+   "mid_mph_all_service": 9.4992,
+   "mid_vehicle_hours": 1151,
+   "mid_ci": [
+    9.33,
+    9.442
+   ],
+   "pm_mph": 7.4674,
+   "pm_mph_all_service": 7.2875,
+   "pm_vehicle_hours": 1044,
+   "pm_ci": [
+    7.372,
+    7.556
+   ],
+   "peak_mph": 7.8906,
+   "peak_mph_all_service": 7.7222,
+   "peak_vehicle_hours": 1844,
+   "peak_ci": [
+    7.8,
+    7.969
+   ],
+   "penalty": 0.1595,
+   "penalty_ci": [
+    0.1508,
+    0.1693
+   ],
+   "pm_penalty": 0.2046,
+   "pm_penalty_ci": [
+    0.1963,
+    0.2132
+   ],
+   "am_penalty": 0.1018,
+   "am_penalty_ci": [
+    0.0849,
+    0.1204
+   ],
+   "peak_minutes_end_to_end": 81.6,
+   "mid_minutes_end_to_end": 68.6,
+   "hourly": [
+    12.19,
+    10.59,
+    8.25,
+    8.32,
+    9.92,
+    10.06,
+    9.61,
+    9.4,
+    9.04,
+    8.49,
+    7.51,
+    7.38,
+    7.18,
+    7.76,
+    9.57,
+    10.54,
+    11.06,
+    11.4
+   ],
+   "street": "Belmont",
+   "slowest_stretch_rush": [
+    {
+     "pid": "10902",
+     "toward": "Cumberland",
+     "mph": 5.049,
+     "note": null,
+     "where": "Belmont, at Halsted",
+     "start": [
+      41.94002,
+      -87.64723
+     ],
+     "end": [
+      41.93998,
+      -87.65152
+     ],
+     "pairs": 2694
+    },
+    {
+     "pid": "10944",
+     "toward": "Diversey/Lake Shore",
+     "mph": 5.801,
+     "note": null,
+     "where": "Belmont, Kedzie to California",
+     "start": [
+      41.93938,
+      -87.70156
+     ],
+     "end": [
+      41.9394,
+      -87.69726
+     ],
+     "pairs": 2750
+    }
+   ],
+   "qa": {
+    "raw_rows": 454606,
+    "dedup_fixes": 453518,
+    "trips": 6492,
+    "pairs": 447026,
+    "pairs_kept": 388295,
+    "share_time_layover": 0.1288,
+    "share_time_long_gap": 0.0182,
+    "pairs_backward": 405,
+    "pairs_geometry": 29,
+    "pairs_short_pattern": 2335
+   }
+  },
+  {
+   "rank": 8,
+   "route": "4",
+   "name": "Cottage Grove",
+   "avg_weekday_rides": 14541,
+   "total_rides_12mo": 4936363,
+   "pattern_miles": 15.09,
+   "fixed_segment_cells": 123,
+   "fixed_segment_coverage": 0.9986,
+   "am_mph": 10.1032,
+   "am_mph_all_service": 10.142,
+   "am_vehicle_hours": 665,
+   "am_ci": [
+    10.009,
+    10.18
+   ],
+   "mid_mph": 9.6136,
+   "mid_mph_all_service": 9.6544,
+   "mid_vehicle_hours": 1397,
+   "mid_ci": [
+    9.534,
+    9.688
+   ],
+   "pm_mph": 9.1599,
+   "pm_mph_all_service": 9.0924,
+   "pm_vehicle_hours": 753,
+   "pm_ci": [
+    9.045,
+    9.259
+   ],
+   "peak_mph": 9.6062,
+   "peak_mph_all_service": 9.5849,
+   "peak_vehicle_hours": 1418,
+   "peak_ci": [
+    9.518,
+    9.683
+   ],
+   "penalty": 0.0008,
+   "penalty_ci": [
+    -0.0096,
+    0.0107
+   ],
+   "pm_penalty": 0.0472,
+   "pm_penalty_ci": [
+    0.0364,
+    0.0584
+   ],
+   "am_penalty": -0.0509,
+   "am_penalty_ci": [
+    -0.0623,
+    -0.0388
+   ],
+   "peak_minutes_end_to_end": 94.2,
+   "mid_minutes_end_to_end": 94.2,
+   "hourly": [
+    13.14,
+    11.96,
+    10.44,
+    9.85,
+    10.16,
+    9.96,
+    9.79,
+    9.46,
+    9.43,
+    9.45,
+    8.99,
+    9.03,
+    9.16,
+    9.99,
+    10.7,
+    11.32,
+    11.87,
+    12.16
+   ],
+   "street": "Cottage Grove",
+   "slowest_stretch_rush": [
+    {
+     "pid": "19379",
+     "toward": "115th",
+     "mph": 5.744,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.87795,
+      -87.62439
+     ],
+     "end": [
+      41.87432,
+      -87.62432
+     ],
+     "pairs": 2508
+    },
+    {
+     "pid": "19378",
+     "toward": "Illinois Center",
+     "mph": 5.808,
+     "note": null,
+     "where": "Michigan, at Roosevelt",
+     "start": [
+      41.86495,
+      -87.62406
+     ],
+     "end": [
+      41.86796,
+      -87.62406
+     ],
+     "pairs": 2269
+    }
+   ],
+   "qa": {
+    "raw_rows": 454708,
+    "dedup_fixes": 452067,
+    "trips": 4979,
+    "pairs": 447088,
+    "pairs_kept": 378891,
+    "share_time_layover": 0.1421,
+    "share_time_long_gap": 0.0319,
+    "pairs_backward": 342,
+    "pairs_geometry": 166,
+    "pairs_short_pattern": 1298
+   }
+  },
+  {
+   "rank": 9,
+   "route": "20",
+   "name": "Madison",
+   "avg_weekday_rides": 14085,
+   "total_rides_12mo": 4542614,
+   "pattern_miles": 8.37,
+   "fixed_segment_cells": 69,
+   "fixed_segment_coverage": 0.974,
+   "am_mph": 8.5952,
+   "am_mph_all_service": 8.4152,
+   "am_vehicle_hours": 644,
+   "am_ci": [
+    8.499,
+    8.686
+   ],
+   "mid_mph": 8.2983,
+   "mid_mph_all_service": 8.593,
+   "mid_vehicle_hours": 874,
+   "mid_ci": [
+    8.244,
+    8.349
+   ],
+   "pm_mph": 7.6899,
+   "pm_mph_all_service": 7.4285,
+   "pm_vehicle_hours": 852,
+   "pm_ci": [
+    7.612,
+    7.758
+   ],
+   "peak_mph": 8.0822,
+   "peak_mph_all_service": 7.8535,
+   "peak_vehicle_hours": 1496,
+   "peak_ci": [
+    8.004,
+    8.151
+   ],
+   "penalty": 0.026,
+   "penalty_ci": [
+    0.0161,
+    0.0356
+   ],
+   "pm_penalty": 0.0733,
+   "pm_penalty_ci": [
+    0.0649,
+    0.0825
+   ],
+   "am_penalty": -0.0358,
+   "am_penalty_ci": [
+    -0.05,
+    -0.0228
+   ],
+   "peak_minutes_end_to_end": 62.2,
+   "mid_minutes_end_to_end": 60.5,
+   "hourly": [
+    11.07,
+    10.33,
+    8.63,
+    8.24,
+    8.76,
+    9.06,
+    8.49,
+    8.4,
+    8.39,
+    8.35,
+    7.83,
+    7.42,
+    7.43,
+    8.23,
+    9.03,
+    9.8,
+    9.99,
+    9.87
+   ],
+   "street": "Madison",
+   "slowest_stretch_rush": [
+    {
+     "pid": "2063",
+     "toward": "Illinois Center",
+     "mph": 5.222,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88317,
+      -87.64277
+     ],
+     "end": [
+      41.8832,
+      -87.63837
+     ],
+     "pairs": 4176
+    },
+    {
+     "pid": "4096",
+     "toward": "Austin",
+     "mph": 5.491,
+     "note": null,
+     "where": "Madison, Racine to Halsted",
+     "start": [
+      41.88176,
+      -87.64881
+     ],
+     "end": [
+      41.88168,
+      -87.65366
+     ],
+     "pairs": 3738
+    }
+   ],
+   "qa": {
+    "raw_rows": 372998,
+    "dedup_fixes": 371570,
+    "trips": 6668,
+    "pairs": 364902,
+    "pairs_kept": 301889,
+    "share_time_layover": 0.1592,
+    "share_time_long_gap": 0.0191,
+    "pairs_backward": 648,
+    "pairs_geometry": 32,
+    "pairs_short_pattern": 7490
+   }
+  },
+  {
+   "rank": 10,
+   "route": "49",
+   "name": "Western",
+   "avg_weekday_rides": 14033,
+   "total_rides_12mo": 4820589,
+   "pattern_miles": 15.85,
+   "fixed_segment_cells": 125,
+   "fixed_segment_coverage": 0.9958,
+   "am_mph": 9.8227,
+   "am_mph_all_service": 9.8117,
+   "am_vehicle_hours": 708,
+   "am_ci": [
+    9.624,
+    9.954
+   ],
+   "mid_mph": 10.6251,
+   "mid_mph_all_service": 10.6719,
+   "mid_vehicle_hours": 1568,
+   "mid_ci": [
+    10.547,
+    10.688
+   ],
+   "pm_mph": 8.6084,
+   "pm_mph_all_service": 8.6192,
+   "pm_vehicle_hours": 818,
+   "pm_ci": [
+    8.452,
+    8.725
+   ],
+   "peak_mph": 9.1895,
+   "peak_mph_all_service": 9.1725,
+   "peak_vehicle_hours": 1526,
+   "peak_ci": [
+    9.053,
+    9.31
+   ],
+   "penalty": 0.1351,
+   "penalty_ci": [
+    0.1244,
+    0.1455
+   ],
+   "pm_penalty": 0.1898,
+   "pm_penalty_ci": [
+    0.1796,
+    0.2023
+   ],
+   "am_penalty": 0.0755,
+   "am_penalty_ci": [
+    0.0632,
+    0.0921
+   ],
+   "peak_minutes_end_to_end": 103.5,
+   "mid_minutes_end_to_end": 89.5,
+   "hourly": [
+    13.62,
+    11.88,
+    9.7,
+    9.92,
+    11.16,
+    11.07,
+    10.81,
+    10.49,
+    10.35,
+    9.69,
+    8.45,
+    8.43,
+    8.82,
+    9.73,
+    11.0,
+    12.05,
+    12.32,
+    12.48
+   ],
+   "street": "Western",
+   "slowest_stretch_rush": [
+    {
+     "pid": "1180",
+     "toward": "Berwyn",
+     "mph": 5.835,
+     "note": null,
+     "where": "Western, Montrose to Lawrence",
+     "start": [
+      41.96211,
+      -87.68863
+     ],
+     "end": [
+      41.96546,
+      -87.68873
+     ],
+     "pairs": 1919
+    },
+    {
+     "pid": "1178",
+     "toward": "79th",
+     "mph": 6.186,
+     "note": null,
+     "where": "Western, at Roosevelt",
+     "start": [
+      41.86826,
+      -87.68615
+     ],
+     "end": [
+      41.86535,
+      -87.68605
+     ],
+     "pairs": 1701
+    }
+   ],
+   "qa": {
+    "raw_rows": 482426,
+    "dedup_fixes": 478911,
+    "trips": 5280,
+    "pairs": 473631,
+    "pairs_kept": 417744,
+    "share_time_layover": 0.1131,
+    "share_time_long_gap": 0.0384,
+    "pairs_backward": 1106,
+    "pairs_geometry": 178,
+    "pairs_short_pattern": 2430
+   }
+  },
+  {
+   "rank": 11,
+   "route": "22",
+   "name": "Clark",
+   "avg_weekday_rides": 13652,
+   "total_rides_12mo": 4780780,
+   "pattern_miles": 10.8,
+   "fixed_segment_cells": 103,
+   "fixed_segment_coverage": 0.9975,
+   "am_mph": 7.6928,
+   "am_mph_all_service": 7.7101,
+   "am_vehicle_hours": 642,
+   "am_ci": [
+    7.601,
+    7.768
+   ],
+   "mid_mph": 7.778,
+   "mid_mph_all_service": 7.8209,
+   "mid_vehicle_hours": 1051,
+   "mid_ci": [
+    7.703,
+    7.84
+   ],
+   "pm_mph": 6.6145,
+   "pm_mph_all_service": 6.5795,
+   "pm_vehicle_hours": 746,
+   "pm_ci": [
+    6.512,
+    6.704
+   ],
+   "peak_mph": 7.1187,
+   "peak_mph_all_service": 7.1023,
+   "peak_vehicle_hours": 1388,
+   "peak_ci": [
+    7.032,
+    7.193
+   ],
+   "penalty": 0.0848,
+   "penalty_ci": [
+    0.0719,
+    0.098
+   ],
+   "pm_penalty": 0.1496,
+   "pm_penalty_ci": [
+    0.1376,
+    0.1632
+   ],
+   "am_penalty": 0.011,
+   "am_penalty_ci": [
+    -0.0053,
+    0.0268
+   ],
+   "peak_minutes_end_to_end": 91.0,
+   "mid_minutes_end_to_end": 83.3,
+   "hourly": [
+    10.84,
+    9.79,
+    7.95,
+    7.45,
+    7.98,
+    8.11,
+    7.84,
+    7.65,
+    7.72,
+    7.61,
+    6.91,
+    6.72,
+    6.46,
+    7.05,
+    7.76,
+    8.34,
+    8.38,
+    8.83
+   ],
+   "street": "Clark",
+   "slowest_stretch_rush": [
+    {
+     "pid": "3936",
+     "toward": "Harrison",
+     "mph": 5.288,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.89722,
+      -87.63127
+     ],
+     "end": [
+      41.89361,
+      -87.63117
+     ],
+     "pairs": 2246
+    },
+    {
+     "pid": "3932",
+     "toward": "Howard",
+     "mph": 5.538,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88568,
+      -87.62949
+     ],
+     "end": [
+      41.88946,
+      -87.62956
+     ],
+     "pairs": 2248
+    }
+   ],
+   "qa": {
+    "raw_rows": 378420,
+    "dedup_fixes": 375354,
+    "trips": 4712,
+    "pairs": 370642,
+    "pairs_kept": 321032,
+    "share_time_layover": 0.1287,
+    "share_time_long_gap": 0.0362,
+    "pairs_backward": 525,
+    "pairs_geometry": 162,
+    "pairs_short_pattern": 4138
+   }
+  },
+  {
+   "rank": 12,
+   "route": "82",
+   "name": "Kimball-Homan",
+   "avg_weekday_rides": 13457,
+   "total_rides_12mo": 4337561,
+   "pattern_miles": 13.19,
+   "fixed_segment_cells": 94,
+   "fixed_segment_coverage": 0.9444,
+   "am_mph": 8.4161,
+   "am_mph_all_service": 8.4069,
+   "am_vehicle_hours": 745,
+   "am_ci": [
+    8.266,
+    8.546
+   ],
+   "mid_mph": 9.809,
+   "mid_mph_all_service": 10.2469,
+   "mid_vehicle_hours": 1198,
+   "mid_ci": [
+    9.734,
+    9.876
+   ],
+   "pm_mph": 7.9078,
+   "pm_mph_all_service": 8.1452,
+   "pm_vehicle_hours": 795,
+   "pm_ci": [
+    7.789,
+    8.018
+   ],
+   "peak_mph": 8.1688,
+   "peak_mph_all_service": 8.2717,
+   "peak_vehicle_hours": 1540,
+   "peak_ci": [
+    8.053,
+    8.263
+   ],
+   "penalty": 0.1672,
+   "penalty_ci": [
+    0.1572,
+    0.1785
+   ],
+   "pm_penalty": 0.1938,
+   "pm_penalty_ci": [
+    0.1818,
+    0.2054
+   ],
+   "am_penalty": 0.142,
+   "am_penalty_ci": [
+    0.1292,
+    0.1574
+   ],
+   "peak_minutes_end_to_end": 96.9,
+   "mid_minutes_end_to_end": 80.7,
+   "hourly": [
+    12.41,
+    10.71,
+    8.21,
+    8.64,
+    10.33,
+    10.45,
+    10.37,
+    10.17,
+    10.05,
+    9.33,
+    7.84,
+    8.17,
+    8.12,
+    9.07,
+    10.56,
+    11.52,
+    11.85,
+    11.64
+   ],
+   "street": "Kimball/Homan",
+   "slowest_stretch_rush": [
+    {
+     "pid": "5069",
+     "toward": "31st/Pulaski",
+     "mph": 4.679,
+     "note": null,
+     "where": "Kimball, Addison to Irving Park",
+     "start": [
+      41.95326,
+      -87.71291
+     ],
+     "end": [
+      41.94938,
+      -87.71279
+     ],
+     "pairs": 1661
+    },
+    {
+     "pid": "28344",
+     "toward": "Lincolnwood Town Center",
+     "mph": 5.874,
+     "note": null,
+     "where": "Kimball, Fullerton to Diversey",
+     "start": [
+      41.9279,
+      -87.71219
+     ],
+     "end": [
+      41.93119,
+      -87.71229
+     ],
+     "pairs": 1628
+    }
+   ],
+   "qa": {
+    "raw_rows": 426446,
+    "dedup_fixes": 422624,
+    "trips": 5481,
+    "pairs": 417143,
+    "pairs_kept": 361468,
+    "share_time_layover": 0.1288,
+    "share_time_long_gap": 0.0287,
+    "pairs_backward": 537,
+    "pairs_geometry": 197,
+    "pairs_short_pattern": 4024
+   }
+  },
+  {
+   "rank": 13,
+   "route": "63",
+   "name": "63rd",
+   "avg_weekday_rides": 12899,
+   "total_rides_12mo": 4198781,
+   "pattern_miles": 8.89,
+   "fixed_segment_cells": 65,
+   "fixed_segment_coverage": 0.9988,
+   "am_mph": 9.1682,
+   "am_mph_all_service": 9.1604,
+   "am_vehicle_hours": 485,
+   "am_ci": [
+    9.068,
+    9.266
+   ],
+   "mid_mph": 9.259,
+   "mid_mph_all_service": 9.3163,
+   "mid_vehicle_hours": 916,
+   "mid_ci": [
+    9.197,
+    9.311
+   ],
+   "pm_mph": 8.1859,
+   "pm_mph_all_service": 8.1364,
+   "pm_vehicle_hours": 572,
+   "pm_ci": [
+    8.11,
+    8.25
+   ],
+   "peak_mph": 8.6434,
+   "peak_mph_all_service": 8.6063,
+   "peak_vehicle_hours": 1057,
+   "peak_ci": [
+    8.579,
+    8.702
+   ],
+   "penalty": 0.0665,
+   "penalty_ci": [
+    0.0593,
+    0.0742
+   ],
+   "pm_penalty": 0.1159,
+   "pm_penalty_ci": [
+    0.1061,
+    0.126
+   ],
+   "am_penalty": 0.0098,
+   "am_penalty_ci": [
+    -0.0002,
+    0.0199
+   ],
+   "peak_minutes_end_to_end": 61.7,
+   "mid_minutes_end_to_end": 57.6,
+   "hourly": [
+    12.25,
+    11.15,
+    9.2,
+    9.13,
+    9.65,
+    9.81,
+    9.34,
+    9.15,
+    8.95,
+    8.52,
+    7.53,
+    7.9,
+    8.38,
+    8.98,
+    10.03,
+    11.02,
+    11.54,
+    11.55
+   ],
+   "street": "63rd",
+   "slowest_stretch_rush": [
+    {
+     "pid": "1618",
+     "toward": "Midway Orange Line",
+     "mph": 5.893,
+     "note": null,
+     "where": "63rd, at Ashland",
+     "start": [
+      41.77906,
+      -87.66248
+     ],
+     "end": [
+      41.77921,
+      -87.66518
+     ],
+     "pairs": 2666
+    },
+    {
+     "pid": "11682",
+     "toward": "Stony Island",
+     "mph": 6.366,
+     "note": null,
+     "where": "63rd, Pulaski to Central Park",
+     "start": [
+      41.77864,
+      -87.72385
+     ],
+     "end": [
+      41.77871,
+      -87.71915
+     ],
+     "pairs": 2353
+    }
+   ],
+   "qa": {
+    "raw_rows": 324727,
+    "dedup_fixes": 320850,
+    "trips": 5697,
+    "pairs": 315153,
+    "pairs_kept": 264905,
+    "share_time_layover": 0.1487,
+    "share_time_long_gap": 0.0279,
+    "pairs_backward": 336,
+    "pairs_geometry": 182,
+    "pairs_short_pattern": 4110
+   }
+  },
+  {
+   "rank": 14,
+   "route": "151",
+   "name": "Sheridan",
+   "avg_weekday_rides": 12175,
+   "total_rides_12mo": 4373967,
+   "pattern_miles": 10.95,
+   "fixed_segment_cells": 92,
+   "fixed_segment_coverage": 0.994,
+   "am_mph": 7.6077,
+   "am_mph_all_service": 7.6397,
+   "am_vehicle_hours": 569,
+   "am_ci": [
+    7.483,
+    7.712
+   ],
+   "mid_mph": 7.3484,
+   "mid_mph_all_service": 7.3956,
+   "mid_vehicle_hours": 1084,
+   "mid_ci": [
+    7.292,
+    7.401
+   ],
+   "pm_mph": 6.3796,
+   "pm_mph_all_service": 6.3535,
+   "pm_vehicle_hours": 661,
+   "pm_ci": [
+    6.292,
+    6.468
+   ],
+   "peak_mph": 6.9532,
+   "peak_mph_all_service": 6.9483,
+   "peak_vehicle_hours": 1231,
+   "peak_ci": [
+    6.868,
+    7.035
+   ],
+   "penalty": 0.0538,
+   "penalty_ci": [
+    0.0434,
+    0.0644
+   ],
+   "pm_penalty": 0.1318,
+   "pm_penalty_ci": [
+    0.1226,
+    0.1409
+   ],
+   "am_penalty": -0.0353,
+   "am_penalty_ci": [
+    -0.0516,
+    -0.0181
+   ],
+   "peak_minutes_end_to_end": 94.5,
+   "mid_minutes_end_to_end": 89.4,
+   "hourly": [
+    10.69,
+    9.22,
+    7.8,
+    7.5,
+    7.83,
+    7.73,
+    7.46,
+    7.16,
+    7.22,
+    7.08,
+    6.75,
+    6.42,
+    6.28,
+    6.91,
+    7.84,
+    8.52,
+    8.93,
+    9.29
+   ],
+   "street": "Sheridan",
+   "slowest_stretch_rush": [
+    {
+     "pid": "8102",
+     "toward": "Union Station",
+     "mph": 4.161,
+     "note": null,
+     "where": "Michigan, at Chicago",
+     "start": [
+      41.89934,
+      -87.62421
+     ],
+     "end": [
+      41.89565,
+      -87.62433
+     ],
+     "pairs": 3065
+    },
+    {
+     "pid": "6414",
+     "toward": "Devon/Clark",
+     "mph": 4.563,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.89322,
+      -87.62413
+     ],
+     "end": [
+      41.89717,
+      -87.62413
+     ],
+     "pairs": 2775
+    }
+   ],
+   "qa": {
+    "raw_rows": 356674,
+    "dedup_fixes": 354079,
+    "trips": 4206,
+    "pairs": 349873,
+    "pairs_kept": 293977,
+    "share_time_layover": 0.1271,
+    "share_time_long_gap": 0.0283,
+    "pairs_backward": 450,
+    "pairs_geometry": 135,
+    "pairs_short_pattern": 12690
+   }
+  },
+  {
+   "rank": 15,
+   "route": "72",
+   "name": "North",
+   "avg_weekday_rides": 11475,
+   "total_rides_12mo": 3883038,
+   "pattern_miles": 9.13,
+   "fixed_segment_cells": 74,
+   "fixed_segment_coverage": 0.9999,
+   "am_mph": 8.2682,
+   "am_mph_all_service": 8.2695,
+   "am_vehicle_hours": 558,
+   "am_ci": [
+    8.147,
+    8.379
+   ],
+   "mid_mph": 8.4545,
+   "mid_mph_all_service": 8.4776,
+   "mid_vehicle_hours": 1013,
+   "mid_ci": [
+    8.371,
+    8.533
+   ],
+   "pm_mph": 6.8912,
+   "pm_mph_all_service": 6.8798,
+   "pm_vehicle_hours": 702,
+   "pm_ci": [
+    6.75,
+    7.018
+   ],
+   "peak_mph": 7.5083,
+   "peak_mph_all_service": 7.4952,
+   "peak_vehicle_hours": 1259,
+   "peak_ci": [
+    7.411,
+    7.597
+   ],
+   "penalty": 0.1119,
+   "penalty_ci": [
+    0.0996,
+    0.1244
+   ],
+   "pm_penalty": 0.1849,
+   "pm_penalty_ci": [
+    0.1716,
+    0.2003
+   ],
+   "am_penalty": 0.022,
+   "am_penalty_ci": [
+    0.0042,
+    0.0403
+   ],
+   "peak_minutes_end_to_end": 73.0,
+   "mid_minutes_end_to_end": 64.8,
+   "hourly": [
+    11.85,
+    10.52,
+    8.43,
+    8.11,
+    8.95,
+    8.88,
+    8.47,
+    8.33,
+    8.24,
+    7.99,
+    7.16,
+    6.72,
+    7.06,
+    7.84,
+    9.05,
+    10.26,
+    10.61,
+    10.85
+   ],
+   "street": "North",
+   "slowest_stretch_rush": [
+    {
+     "pid": "10913",
+     "toward": "Clark",
+     "mph": 4.911,
+     "note": null,
+     "where": "North, Western to Damen",
+     "start": [
+      41.91033,
+      -87.68558
+     ],
+     "end": [
+      41.91043,
+      -87.68015
+     ],
+     "pairs": 3161
+    },
+    {
+     "pid": "95",
+     "toward": "Harlem",
+     "mph": 5.019,
+     "note": null,
+     "where": "North, at Western",
+     "start": [
+      41.9104,
+      -87.68228
+     ],
+     "end": [
+      41.91034,
+      -87.68651
+     ],
+     "pairs": 3256
+    }
+   ],
+   "qa": {
+    "raw_rows": 350597,
+    "dedup_fixes": 349591,
+    "trips": 5861,
+    "pairs": 343730,
+    "pairs_kept": 288534,
+    "share_time_layover": 0.1133,
+    "share_time_long_gap": 0.0176,
+    "pairs_backward": 1144,
+    "pairs_geometry": 53,
+    "pairs_short_pattern": 13506
+   }
+  },
+  {
+   "rank": 16,
+   "route": "60",
+   "name": "Blue Island/26th",
+   "avg_weekday_rides": 11283,
+   "total_rides_12mo": 3567551,
+   "pattern_miles": 9.33,
+   "fixed_segment_cells": 77,
+   "fixed_segment_coverage": 0.9954,
+   "am_mph": 8.3534,
+   "am_mph_all_service": 8.3463,
+   "am_vehicle_hours": 554,
+   "am_ci": [
+    8.273,
+    8.427
+   ],
+   "mid_mph": 8.3215,
+   "mid_mph_all_service": 8.3891,
+   "mid_vehicle_hours": 969,
+   "mid_ci": [
+    8.259,
+    8.38
+   ],
+   "pm_mph": 7.2805,
+   "pm_mph_all_service": 7.2599,
+   "pm_vehicle_hours": 614,
+   "pm_ci": [
+    7.185,
+    7.372
+   ],
+   "peak_mph": 7.796,
+   "peak_mph_all_service": 7.7755,
+   "peak_vehicle_hours": 1168,
+   "peak_ci": [
+    7.726,
+    7.861
+   ],
+   "penalty": 0.0631,
+   "penalty_ci": [
+    0.0527,
+    0.0737
+   ],
+   "pm_penalty": 0.1251,
+   "pm_penalty_ci": [
+    0.1135,
+    0.1376
+   ],
+   "am_penalty": -0.0038,
+   "am_penalty_ci": [
+    -0.0173,
+    0.0092
+   ],
+   "peak_minutes_end_to_end": 71.8,
+   "mid_minutes_end_to_end": 67.3,
+   "hourly": [
+    11.42,
+    10.13,
+    8.5,
+    8.2,
+    8.8,
+    8.7,
+    8.53,
+    8.17,
+    8.18,
+    7.93,
+    7.26,
+    7.15,
+    7.38,
+    8.36,
+    9.33,
+    10.11,
+    10.45,
+    11.05
+   ],
+   "street": "Blue Island/26th",
+   "slowest_stretch_rush": [
+    {
+     "pid": "1350",
+     "toward": "Cicero/24th Pl",
+     "mph": 5.345,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88151,
+      -87.64034
+     ],
+     "end": [
+      41.87836,
+      -87.6411
+     ],
+     "pairs": 2983
+    },
+    {
+     "pid": "1345",
+     "toward": "Randolph/Harbor Dr",
+     "mph": 5.738,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88197,
+      -87.64259
+     ],
+     "end": [
+      41.88317,
+      -87.64006
+     ],
+     "pairs": 2970
+    }
+   ],
+   "qa": {
+    "raw_rows": 328272,
+    "dedup_fixes": 326854,
+    "trips": 4946,
+    "pairs": 321908,
+    "pairs_kept": 278468,
+    "share_time_layover": 0.132,
+    "share_time_long_gap": 0.0248,
+    "pairs_backward": 528,
+    "pairs_geometry": 40,
+    "pairs_short_pattern": 901
+   }
+  },
+  {
+   "rank": 17,
+   "route": "146",
+   "name": "Inner Lake Shore/Michigan Express",
+   "avg_weekday_rides": 10076,
+   "total_rides_12mo": 3492084,
+   "pattern_miles": 9.95,
+   "fixed_segment_cells": 86,
+   "fixed_segment_coverage": 0.989,
+   "am_mph": 8.5345,
+   "am_mph_all_service": 8.6213,
+   "am_vehicle_hours": 528,
+   "am_ci": [
+    8.352,
+    8.695
+   ],
+   "mid_mph": 8.9487,
+   "mid_mph_all_service": 8.9123,
+   "mid_vehicle_hours": 863,
+   "mid_ci": [
+    8.799,
+    9.079
+   ],
+   "pm_mph": 7.35,
+   "pm_mph_all_service": 7.4515,
+   "pm_vehicle_hours": 519,
+   "pm_ci": [
+    7.142,
+    7.532
+   ],
+   "peak_mph": 7.9316,
+   "peak_mph_all_service": 8.0412,
+   "peak_vehicle_hours": 1047,
+   "peak_ci": [
+    7.777,
+    8.076
+   ],
+   "penalty": 0.1137,
+   "penalty_ci": [
+    0.0985,
+    0.128
+   ],
+   "pm_penalty": 0.1787,
+   "pm_penalty_ci": [
+    0.1601,
+    0.1988
+   ],
+   "am_penalty": 0.0463,
+   "am_penalty_ci": [
+    0.0264,
+    0.0655
+   ],
+   "peak_minutes_end_to_end": 75.3,
+   "mid_minutes_end_to_end": 66.7,
+   "hourly": [
+    11.69,
+    10.61,
+    9.15,
+    8.21,
+    8.79,
+    9.16,
+    8.92,
+    8.84,
+    8.7,
+    8.49,
+    8.37,
+    7.41,
+    7.49,
+    8.18,
+    9.26,
+    9.99,
+    10.36,
+    10.86
+   ],
+   "street": "Lake Shore Dr/Michigan",
+   "slowest_stretch_rush": [
+    {
+     "pid": "6582",
+     "toward": "Berwyn Red Line",
+     "mph": 3.344,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.88325,
+      -87.62779
+     ],
+     "end": [
+      41.88632,
+      -87.62744
+     ],
+     "pairs": 2295
+    },
+    {
+     "pid": "7451",
+     "toward": "Museum Campus",
+     "mph": 4.213,
+     "note": null,
+     "where": "Michigan, at Chicago",
+     "start": [
+      41.89935,
+      -87.62421
+     ],
+     "end": [
+      41.89581,
+      -87.62432
+     ],
+     "pairs": 2594
+    }
+   ],
+   "qa": {
+    "raw_rows": 271768,
+    "dedup_fixes": 268032,
+    "trips": 4367,
+    "pairs": 263665,
+    "pairs_kept": 228995,
+    "share_time_layover": 0.1363,
+    "share_time_long_gap": 0.0396,
+    "pairs_backward": 692,
+    "pairs_geometry": 167,
+    "pairs_short_pattern": 1094
+   }
+  },
+  {
+   "rank": 18,
+   "route": "36",
+   "name": "Broadway",
+   "avg_weekday_rides": 9939,
+   "total_rides_12mo": 3620768,
+   "pattern_miles": 9.94,
+   "fixed_segment_cells": 84,
+   "fixed_segment_coverage": 0.9977,
+   "am_mph": 7.1391,
+   "am_mph_all_service": 7.1758,
+   "am_vehicle_hours": 487,
+   "am_ci": [
+    7.052,
+    7.217
+   ],
+   "mid_mph": 6.6378,
+   "mid_mph_all_service": 6.6711,
+   "mid_vehicle_hours": 897,
+   "mid_ci": [
+    6.576,
+    6.69
+   ],
+   "pm_mph": 5.9424,
+   "pm_mph_all_service": 5.8999,
+   "pm_vehicle_hours": 649,
+   "pm_ci": [
+    5.876,
+    5.999
+   ],
+   "peak_mph": 6.4642,
+   "peak_mph_all_service": 6.4469,
+   "peak_vehicle_hours": 1137,
+   "peak_ci": [
+    6.403,
+    6.521
+   ],
+   "penalty": 0.0262,
+   "penalty_ci": [
+    0.0141,
+    0.039
+   ],
+   "pm_penalty": 0.1048,
+   "pm_penalty_ci": [
+    0.0942,
+    0.1171
+   ],
+   "am_penalty": -0.0755,
+   "am_penalty_ci": [
+    -0.0919,
+    -0.0584
+   ],
+   "peak_minutes_end_to_end": 92.2,
+   "mid_minutes_end_to_end": 89.8,
+   "hourly": [
+    10.06,
+    9.22,
+    7.68,
+    6.76,
+    7.11,
+    7.13,
+    6.61,
+    6.43,
+    6.51,
+    6.43,
+    6.12,
+    5.94,
+    5.86,
+    6.41,
+    6.92,
+    7.42,
+    7.82,
+    8.4
+   ],
+   "street": "Broadway",
+   "slowest_stretch_rush": [
+    {
+     "pid": "5905",
+     "toward": "LaSalle Metra Station",
+     "mph": 4.581,
+     "note": null,
+     "where": "Downtown (Loop / River North)",
+     "start": [
+      41.89004,
+      -87.62807
+     ],
+     "end": [
+      41.88708,
+      -87.62923
+     ],
+     "pairs": 2834
+    },
+    {
+     "pid": "5907",
+     "toward": "Devon/Clark",
+     "mph": 4.768,
+     "note": null,
+     "where": "Broadway, at Bryn Mawr",
+     "start": [
+      41.98217,
+      -87.65994
+     ],
+     "end": [
+      41.98506,
+      -87.66003
+     ],
+     "pairs": 1206
+    }
+   ],
+   "qa": {
+    "raw_rows": 290002,
+    "dedup_fixes": 289365,
+    "trips": 3319,
+    "pairs": 286046,
+    "pairs_kept": 251521,
+    "share_time_layover": 0.1214,
+    "share_time_long_gap": 0.0287,
+    "pairs_backward": 453,
+    "pairs_geometry": 38,
+    "pairs_short_pattern": 0
+   }
+  },
+  {
+   "rank": 19,
+   "route": "12",
+   "name": "Roosevelt",
+   "avg_weekday_rides": 9831,
+   "total_rides_12mo": 3212657,
+   "pattern_miles": 8.6,
+   "fixed_segment_cells": 71,
+   "fixed_segment_coverage": 0.998,
+   "am_mph": 8.9931,
+   "am_mph_all_service": 9.0154,
+   "am_vehicle_hours": 525,
+   "am_ci": [
+    8.89,
+    9.085
+   ],
+   "mid_mph": 9.0111,
+   "mid_mph_all_service": 9.0756,
+   "mid_vehicle_hours": 849,
+   "mid_ci": [
+    8.938,
+    9.077
+   ],
+   "pm_mph": 7.8943,
+   "pm_mph_all_service": 7.8173,
+   "pm_vehicle_hours": 536,
+   "pm_ci": [
+    7.752,
+    8.013
+   ],
+   "peak_mph": 8.4417,
+   "peak_mph_all_service": 8.4103,
+   "peak_vehicle_hours": 1061,
+   "peak_ci": [
+    8.344,
+    8.525
+   ],
+   "penalty": 0.0632,
+   "penalty_ci": [
+    0.0498,
+    0.0777
+   ],
+   "pm_penalty": 0.1239,
+   "pm_penalty_ci": [
+    0.1078,
+    0.1413
+   ],
+   "am_penalty": 0.002,
+   "am_penalty_ci": [
+    -0.0133,
+    0.0179
+   ],
+   "peak_minutes_end_to_end": 61.1,
+   "mid_minutes_end_to_end": 57.2,
+   "hourly": [
+    12.02,
+    11.02,
+    9.1,
+    8.93,
+    9.46,
+    9.51,
+    9.21,
+    8.86,
+    8.78,
+    8.22,
+    7.74,
+    7.72,
+    7.92,
+    9.13,
+    9.85,
+    10.73,
+    10.66,
+    11.1
+   ],
+   "street": "Roosevelt",
+   "slowest_stretch_rush": [
+    {
+     "pid": "4135",
+     "toward": "15th/Indiana",
+     "mph": 5.635,
+     "note": null,
+     "where": "Roosevelt, at Halsted",
+     "start": [
+      41.86704,
+      -87.65039
+     ],
+     "end": [
+      41.86712,
+      -87.64579
+     ],
+     "pairs": 3026
+    },
+    {
+     "pid": "7471",
+     "toward": "Central/Harrison",
+     "mph": 6.137,
+     "note": null,
+     "where": "Roosevelt, at Halsted",
+     "start": [
+      41.86728,
+      -87.64262
+     ],
+     "end": [
+      41.8672,
+      -87.64772
+     ],
+     "pairs": 2873
+    }
+   ],
+   "qa": {
+    "raw_rows": 288605,
+    "dedup_fixes": 287453,
+    "trips": 4953,
+    "pairs": 282500,
+    "pairs_kept": 237116,
+    "share_time_layover": 0.1554,
+    "share_time_long_gap": 0.0184,
+    "pairs_backward": 341,
+    "pairs_geometry": 47,
+    "pairs_short_pattern": 1573
+   }
+  },
+  {
+   "rank": 20,
+   "route": "47",
+   "name": "47th",
+   "avg_weekday_rides": 9545,
+   "total_rides_12mo": 3078955,
+   "pattern_miles": 10.19,
+   "fixed_segment_cells": 82,
+   "fixed_segment_coverage": 0.9964,
+   "am_mph": 9.7319,
+   "am_mph_all_service": 9.7924,
+   "am_vehicle_hours": 483,
+   "am_ci": [
+    9.596,
+    9.846
+   ],
+   "mid_mph": 9.9834,
+   "mid_mph_all_service": 10.0638,
+   "mid_vehicle_hours": 881,
+   "mid_ci": [
+    9.829,
+    10.1
+   ],
+   "pm_mph": 8.5495,
+   "pm_mph_all_service": 8.4419,
+   "pm_vehicle_hours": 527,
+   "pm_ci": [
+    8.395,
+    8.663
+   ],
+   "peak_mph": 9.1232,
+   "peak_mph_all_service": 9.0879,
+   "peak_vehicle_hours": 1010,
+   "peak_ci": [
+    9.004,
+    9.215
+   ],
+   "penalty": 0.0862,
+   "penalty_ci": [
+    0.0714,
+    0.1013
+   ],
+   "pm_penalty": 0.1436,
+   "pm_penalty_ci": [
+    0.1265,
+    0.162
+   ],
+   "am_penalty": 0.0252,
+   "am_penalty_ci": [
+    0.0104,
+    0.0403
+   ],
+   "peak_minutes_end_to_end": 67.0,
+   "mid_minutes_end_to_end": 61.3,
+   "hourly": [
+    12.59,
+    11.78,
+    9.66,
+    9.93,
+    10.55,
+    10.5,
+    10.19,
+    9.86,
+    9.76,
+    8.76,
+    7.48,
+    8.1,
+    8.8,
+    9.38,
+    10.88,
+    12.06,
+    12.36,
+    12.54
+   ],
+   "street": "47th",
+   "slowest_stretch_rush": [
+    {
+     "pid": "6126",
+     "toward": "Lake Park",
+     "mph": 5.306,
+     "note": null,
+     "where": "47th, at Western",
+     "start": [
+      41.80835,
+      -87.68854
+     ],
+     "end": [
+      41.80842,
+      -87.68463
+     ],
+     "pairs": 1122
+    },
+    {
+     "pid": "6128",
+     "toward": "Midway Orange Line",
+     "mph": 5.632,
+     "note": null,
+     "where": "47th, Ashland to Racine",
+     "start": [
+      41.80865,
+      -87.6616
+     ],
+     "end": [
+      41.80859,
+      -87.66504
+     ],
+     "pairs": 740
+    }
+   ],
+   "qa": {
+    "raw_rows": 297505,
+    "dedup_fixes": 295725,
+    "trips": 4758,
+    "pairs": 290967,
+    "pairs_kept": 247428,
+    "share_time_layover": 0.1235,
+    "share_time_long_gap": 0.0718,
+    "pairs_backward": 1042,
+    "pairs_geometry": 486,
+    "pairs_short_pattern": 4564
+   }
+  }
+ ],
+ "all_routes": [
+  {
+   "route": "37",
+   "express": false,
+   "top20": false,
+   "am_mph": 6.6822,
+   "mid_mph": 7.9328,
+   "pm_mph": 6.1928,
+   "peak_mph": 6.4068,
+   "am_vehicle_hours": 256,
+   "mid_vehicle_hours": 203,
+   "pm_vehicle_hours": 283
+  },
+  {
+   "route": "36",
+   "express": false,
+   "top20": true,
+   "am_mph": 7.1391,
+   "mid_mph": 6.6378,
+   "pm_mph": 5.9424,
+   "peak_mph": 6.4642,
+   "am_vehicle_hours": 487,
+   "mid_vehicle_hours": 897,
+   "pm_vehicle_hours": 649
+  },
+  {
+   "route": "156",
+   "express": false,
+   "top20": false,
+   "am_mph": 6.9152,
+   "mid_mph": 7.909,
+   "pm_mph": 6.4115,
+   "peak_mph": 6.6617,
+   "am_vehicle_hours": 404,
+   "mid_vehicle_hours": 348,
+   "pm_vehicle_hours": 351
+  },
+  {
+   "route": "155",
+   "express": false,
+   "top20": false,
+   "am_mph": 7.4079,
+   "mid_mph": 7.2436,
+   "pm_mph": 6.1945,
+   "peak_mph": 6.708,
+   "am_vehicle_hours": 206,
+   "mid_vehicle_hours": 341,
+   "pm_vehicle_hours": 286
+  },
+  {
+   "route": "151",
+   "express": false,
+   "top20": true,
+   "am_mph": 7.6077,
+   "mid_mph": 7.3484,
+   "pm_mph": 6.3796,
+   "peak_mph": 6.9532,
+   "am_vehicle_hours": 569,
+   "mid_vehicle_hours": 1084,
+   "pm_vehicle_hours": 661
+  },
+  {
+   "route": "157",
+   "express": false,
+   "top20": false,
+   "am_mph": 7.5285,
+   "mid_mph": 7.494,
+   "pm_mph": 6.5181,
+   "peak_mph": 7.0136,
+   "am_vehicle_hours": 428,
+   "mid_vehicle_hours": 616,
+   "pm_vehicle_hours": 438
+  },
+  {
+   "route": "22",
+   "express": false,
+   "top20": true,
+   "am_mph": 7.6928,
+   "mid_mph": 7.778,
+   "pm_mph": 6.6145,
+   "peak_mph": 7.1187,
+   "am_vehicle_hours": 642,
+   "mid_vehicle_hours": 1051,
+   "pm_vehicle_hours": 746
+  },
+  {
+   "route": "56",
+   "express": false,
+   "top20": false,
+   "am_mph": 7.8458,
+   "mid_mph": 8.5051,
+   "pm_mph": 6.7818,
+   "peak_mph": 7.3754,
+   "am_vehicle_hours": 635,
+   "mid_vehicle_hours": 625,
+   "pm_vehicle_hours": 533
+  },
+  {
+   "route": "66",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.0383,
+   "mid_mph": 8.1846,
+   "pm_mph": 6.9792,
+   "peak_mph": 7.477,
+   "am_vehicle_hours": 999,
+   "mid_vehicle_hours": 1421,
+   "pm_vehicle_hours": 1113
+  },
+  {
+   "route": "81",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.1552,
+   "mid_mph": 8.4096,
+   "pm_mph": 6.817,
+   "peak_mph": 7.5018,
+   "am_vehicle_hours": 391,
+   "mid_vehicle_hours": 633,
+   "pm_vehicle_hours": 385
+  },
+  {
+   "route": "72",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.2682,
+   "mid_mph": 8.4545,
+   "pm_mph": 6.8912,
+   "peak_mph": 7.5083,
+   "am_vehicle_hours": 558,
+   "mid_vehicle_hours": 1013,
+   "pm_vehicle_hours": 702
+  },
+  {
+   "route": "74",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.2597,
+   "mid_mph": 8.5821,
+   "pm_mph": 6.9876,
+   "peak_mph": 7.5959,
+   "am_vehicle_hours": 520,
+   "mid_vehicle_hours": 875,
+   "pm_vehicle_hours": 585
+  },
+  {
+   "route": "50",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.3032,
+   "mid_mph": 8.9293,
+   "pm_mph": 7.1599,
+   "peak_mph": 7.7436,
+   "am_vehicle_hours": 587,
+   "mid_vehicle_hours": 762,
+   "pm_vehicle_hours": 579
+  },
+  {
+   "route": "73",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.0213,
+   "mid_mph": 9.1184,
+   "pm_mph": 7.3957,
+   "peak_mph": 7.7442,
+   "am_vehicle_hours": 447,
+   "mid_vehicle_hours": 460,
+   "pm_vehicle_hours": 412
+  },
+  {
+   "route": "76",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.3653,
+   "mid_mph": 8.8655,
+   "pm_mph": 7.1963,
+   "peak_mph": 7.7655,
+   "am_vehicle_hours": 626,
+   "mid_vehicle_hours": 658,
+   "pm_vehicle_hours": 668
+  },
+  {
+   "route": "60",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.3534,
+   "mid_mph": 8.3215,
+   "pm_mph": 7.2805,
+   "peak_mph": 7.796,
+   "am_vehicle_hours": 554,
+   "mid_vehicle_hours": 969,
+   "pm_vehicle_hours": 614
+  },
+  {
+   "route": "77",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.4325,
+   "mid_mph": 9.3879,
+   "pm_mph": 7.4674,
+   "peak_mph": 7.8906,
+   "am_vehicle_hours": 800,
+   "mid_vehicle_hours": 1151,
+   "pm_vehicle_hours": 1044
+  },
+  {
+   "route": "146",
+   "express": true,
+   "top20": true,
+   "am_mph": 8.5345,
+   "mid_mph": 8.9487,
+   "pm_mph": 7.35,
+   "peak_mph": 7.9316,
+   "am_vehicle_hours": 528,
+   "mid_vehicle_hours": 863,
+   "pm_vehicle_hours": 519
+  },
+  {
+   "route": "65",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.5022,
+   "mid_mph": 9.5739,
+   "pm_mph": 7.5149,
+   "peak_mph": 7.9448,
+   "am_vehicle_hours": 454,
+   "mid_vehicle_hours": 503,
+   "pm_vehicle_hours": 568
+  },
+  {
+   "route": "70",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.6584,
+   "mid_mph": 9.1263,
+   "pm_mph": 7.2117,
+   "peak_mph": 8.0245,
+   "am_vehicle_hours": 457,
+   "mid_vehicle_hours": 612,
+   "pm_vehicle_hours": 368
+  },
+  {
+   "route": "78",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.7961,
+   "mid_mph": 9.2008,
+   "pm_mph": 7.326,
+   "peak_mph": 8.0345,
+   "am_vehicle_hours": 385,
+   "mid_vehicle_hours": 541,
+   "pm_vehicle_hours": 419
+  },
+  {
+   "route": "20",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.5952,
+   "mid_mph": 8.2983,
+   "pm_mph": 7.6899,
+   "peak_mph": 8.0822,
+   "am_vehicle_hours": 644,
+   "mid_vehicle_hours": 874,
+   "pm_vehicle_hours": 852
+  },
+  {
+   "route": "82",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.4161,
+   "mid_mph": 9.809,
+   "pm_mph": 7.9078,
+   "peak_mph": 8.1688,
+   "am_vehicle_hours": 745,
+   "mid_vehicle_hours": 1198,
+   "pm_vehicle_hours": 795
+  },
+  {
+   "route": "92",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.7351,
+   "mid_mph": 9.4316,
+   "pm_mph": 7.747,
+   "peak_mph": 8.2236,
+   "am_vehicle_hours": 244,
+   "mid_vehicle_hours": 351,
+   "pm_vehicle_hours": 261
+  },
+  {
+   "route": "80",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.8413,
+   "mid_mph": 9.673,
+   "pm_mph": 7.7426,
+   "peak_mph": 8.2887,
+   "am_vehicle_hours": 509,
+   "mid_vehicle_hours": 790,
+   "pm_vehicle_hours": 524
+  },
+  {
+   "route": "126",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.4467,
+   "mid_mph": 9.4453,
+   "pm_mph": 8.198,
+   "peak_mph": 8.315,
+   "am_vehicle_hours": 356,
+   "mid_vehicle_hours": 461,
+   "pm_vehicle_hours": 337
+  },
+  {
+   "route": "7",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.4682,
+   "mid_mph": 9.0233,
+   "pm_mph": 8.1324,
+   "peak_mph": 8.3272,
+   "am_vehicle_hours": 327,
+   "mid_vehicle_hours": 513,
+   "pm_vehicle_hours": 297
+  },
+  {
+   "route": "54",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.2029,
+   "mid_mph": 9.5172,
+   "pm_mph": 7.6101,
+   "peak_mph": 8.3317,
+   "am_vehicle_hours": 388,
+   "mid_vehicle_hours": 775,
+   "pm_vehicle_hours": 474
+  },
+  {
+   "route": "8",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.9373,
+   "mid_mph": 9.0389,
+   "pm_mph": 7.7727,
+   "peak_mph": 8.3795,
+   "am_vehicle_hours": 1075,
+   "mid_vehicle_hours": 1481,
+   "pm_vehicle_hours": 1039
+  },
+  {
+   "route": "52",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.8378,
+   "mid_mph": 9.0905,
+   "pm_mph": 8.0558,
+   "peak_mph": 8.437,
+   "am_vehicle_hours": 409,
+   "mid_vehicle_hours": 610,
+   "pm_vehicle_hours": 431
+  },
+  {
+   "route": "12",
+   "express": false,
+   "top20": true,
+   "am_mph": 8.9931,
+   "mid_mph": 9.0111,
+   "pm_mph": 7.8943,
+   "peak_mph": 8.4417,
+   "am_vehicle_hours": 525,
+   "mid_vehicle_hours": 849,
+   "pm_vehicle_hours": 536
+  },
+  {
+   "route": "11",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.9592,
+   "mid_mph": 10.0202,
+   "pm_mph": 7.9628,
+   "peak_mph": 8.444,
+   "am_vehicle_hours": 120,
+   "mid_vehicle_hours": 186,
+   "pm_vehicle_hours": 137
+  },
+  {
+   "route": "21",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.1328,
+   "mid_mph": 9.0376,
+   "pm_mph": 7.9617,
+   "peak_mph": 8.4856,
+   "am_vehicle_hours": 366,
+   "mid_vehicle_hours": 677,
+   "pm_vehicle_hours": 471
+  },
+  {
+   "route": "152",
+   "express": false,
+   "top20": false,
+   "am_mph": 8.8883,
+   "mid_mph": 10.0877,
+   "pm_mph": 8.1207,
+   "peak_mph": 8.5207,
+   "am_vehicle_hours": 693,
+   "mid_vehicle_hours": 551,
+   "pm_vehicle_hours": 639
+  },
+  {
+   "route": "18",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.186,
+   "mid_mph": 9.1731,
+   "pm_mph": 8.0402,
+   "peak_mph": 8.5842,
+   "am_vehicle_hours": 225,
+   "mid_vehicle_hours": 338,
+   "pm_vehicle_hours": 243
+  },
+  {
+   "route": "63",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.1682,
+   "mid_mph": 9.259,
+   "pm_mph": 8.1859,
+   "peak_mph": 8.6434,
+   "am_vehicle_hours": 485,
+   "mid_vehicle_hours": 916,
+   "pm_vehicle_hours": 572
+  },
+  {
+   "route": "85",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.1901,
+   "mid_mph": 9.8389,
+   "pm_mph": 8.1706,
+   "peak_mph": 8.6515,
+   "am_vehicle_hours": 437,
+   "mid_vehicle_hours": 748,
+   "pm_vehicle_hours": 499
+  },
+  {
+   "route": "57",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.2743,
+   "mid_mph": 10.2969,
+   "pm_mph": 8.2834,
+   "peak_mph": 8.8029,
+   "am_vehicle_hours": 125,
+   "mid_vehicle_hours": 178,
+   "pm_vehicle_hours": 115
+  },
+  {
+   "route": "84",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.5671,
+   "mid_mph": 10.5173,
+   "pm_mph": 8.0679,
+   "peak_mph": 8.8211,
+   "am_vehicle_hours": 259,
+   "mid_vehicle_hours": 340,
+   "pm_vehicle_hours": 265
+  },
+  {
+   "route": "53",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.3423,
+   "mid_mph": 9.7784,
+   "pm_mph": 8.327,
+   "peak_mph": 8.8218,
+   "am_vehicle_hours": 917,
+   "mid_vehicle_hours": 1729,
+   "pm_vehicle_hours": 998
+  },
+  {
+   "route": "49B",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.3084,
+   "mid_mph": 10.1139,
+   "pm_mph": 8.3795,
+   "peak_mph": 8.8385,
+   "am_vehicle_hours": 179,
+   "mid_vehicle_hours": 279,
+   "pm_vehicle_hours": 189
+  },
+  {
+   "route": "3",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.5047,
+   "mid_mph": 9.415,
+   "pm_mph": 8.4081,
+   "peak_mph": 8.9224,
+   "am_vehicle_hours": 755,
+   "mid_vehicle_hours": 1173,
+   "pm_vehicle_hours": 852
+  },
+  {
+   "route": "93",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.3336,
+   "mid_mph": 10.0703,
+   "pm_mph": 8.4762,
+   "peak_mph": 8.933,
+   "am_vehicle_hours": 288,
+   "mid_vehicle_hours": 414,
+   "pm_vehicle_hours": 266
+  },
+  {
+   "route": "94",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.4727,
+   "mid_mph": 10.4256,
+   "pm_mph": 8.5915,
+   "peak_mph": 9.0639,
+   "am_vehicle_hours": 663,
+   "mid_vehicle_hours": 903,
+   "pm_vehicle_hours": 611
+  },
+  {
+   "route": "79",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.5264,
+   "mid_mph": 9.4339,
+   "pm_mph": 8.736,
+   "peak_mph": 9.0962,
+   "am_vehicle_hours": 860,
+   "mid_vehicle_hours": 1442,
+   "pm_vehicle_hours": 1041
+  },
+  {
+   "route": "47",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.7319,
+   "mid_mph": 9.9834,
+   "pm_mph": 8.5495,
+   "peak_mph": 9.1232,
+   "am_vehicle_hours": 483,
+   "mid_vehicle_hours": 881,
+   "pm_vehicle_hours": 527
+  },
+  {
+   "route": "28",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.2365,
+   "mid_mph": 10.6884,
+   "pm_mph": 8.9139,
+   "peak_mph": 9.1598,
+   "am_vehicle_hours": 318,
+   "mid_vehicle_hours": 241,
+   "pm_vehicle_hours": 291
+  },
+  {
+   "route": "49",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.8227,
+   "mid_mph": 10.6251,
+   "pm_mph": 8.6084,
+   "peak_mph": 9.1895,
+   "am_vehicle_hours": 708,
+   "mid_vehicle_hours": 1568,
+   "pm_vehicle_hours": 818
+  },
+  {
+   "route": "9",
+   "express": false,
+   "top20": true,
+   "am_mph": 9.8883,
+   "mid_mph": 10.1132,
+   "pm_mph": 8.6272,
+   "peak_mph": 9.233,
+   "am_vehicle_hours": 790,
+   "mid_vehicle_hours": 1507,
+   "pm_vehicle_hours": 911
+  },
+  {
+   "route": "62",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.8672,
+   "mid_mph": 10.1641,
+   "pm_mph": 8.7948,
+   "peak_mph": 9.3,
+   "am_vehicle_hours": 464,
+   "mid_vehicle_hours": 708,
+   "pm_vehicle_hours": 520
+  },
+  {
+   "route": "90",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.0625,
+   "mid_mph": 9.7886,
+   "pm_mph": 8.6435,
+   "peak_mph": 9.3138,
+   "am_vehicle_hours": 220,
+   "mid_vehicle_hours": 320,
+   "pm_vehicle_hours": 255
+  },
+  {
+   "route": "29",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.9131,
+   "mid_mph": 10.0776,
+   "pm_mph": 8.8495,
+   "peak_mph": 9.3239,
+   "am_vehicle_hours": 381,
+   "mid_vehicle_hours": 797,
+   "pm_vehicle_hours": 477
+  },
+  {
+   "route": "55",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.822,
+   "mid_mph": 10.7659,
+   "pm_mph": 9.0565,
+   "peak_mph": 9.4388,
+   "am_vehicle_hours": 460,
+   "mid_vehicle_hours": 796,
+   "pm_vehicle_hours": 485
+  },
+  {
+   "route": "91",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.9813,
+   "mid_mph": 11.1691,
+   "pm_mph": 8.9921,
+   "peak_mph": 9.4941,
+   "am_vehicle_hours": 321,
+   "mid_vehicle_hours": 390,
+   "pm_vehicle_hours": 318
+  },
+  {
+   "route": "35",
+   "express": false,
+   "top20": false,
+   "am_mph": 9.807,
+   "mid_mph": 10.3088,
+   "pm_mph": 9.346,
+   "peak_mph": 9.575,
+   "am_vehicle_hours": 386,
+   "mid_vehicle_hours": 730,
+   "pm_vehicle_hours": 408
+  },
+  {
+   "route": "4",
+   "express": false,
+   "top20": true,
+   "am_mph": 10.1032,
+   "mid_mph": 9.6136,
+   "pm_mph": 9.1599,
+   "peak_mph": 9.6062,
+   "am_vehicle_hours": 665,
+   "mid_vehicle_hours": 1397,
+   "pm_vehicle_hours": 753
+  },
+  {
+   "route": "87",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.4376,
+   "mid_mph": 10.0769,
+   "pm_mph": 9.1705,
+   "peak_mph": 9.7468,
+   "am_vehicle_hours": 422,
+   "mid_vehicle_hours": 730,
+   "pm_vehicle_hours": 509
+  },
+  {
+   "route": "67",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.203,
+   "mid_mph": 10.8104,
+   "pm_mph": 9.387,
+   "peak_mph": 9.7933,
+   "am_vehicle_hours": 291,
+   "mid_vehicle_hours": 562,
+   "pm_vehicle_hours": 308
+  },
+  {
+   "route": "15",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.3448,
+   "mid_mph": 11.186,
+   "pm_mph": 9.4563,
+   "peak_mph": 9.8864,
+   "am_vehicle_hours": 282,
+   "mid_vehicle_hours": 507,
+   "pm_vehicle_hours": 303
+  },
+  {
+   "route": "75",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.4899,
+   "mid_mph": 10.4608,
+   "pm_mph": 9.4024,
+   "peak_mph": 9.9314,
+   "am_vehicle_hours": 324,
+   "mid_vehicle_hours": 568,
+   "pm_vehicle_hours": 342
+  },
+  {
+   "route": "147",
+   "express": true,
+   "top20": false,
+   "am_mph": 10.3343,
+   "mid_mph": 11.1836,
+   "pm_mph": 9.5712,
+   "peak_mph": 9.9644,
+   "am_vehicle_hours": 447,
+   "mid_vehicle_hours": 674,
+   "pm_vehicle_hours": 519
+  },
+  {
+   "route": "86",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.6295,
+   "mid_mph": 12.0513,
+   "pm_mph": 9.8117,
+   "peak_mph": 10.1967,
+   "am_vehicle_hours": 209,
+   "mid_vehicle_hours": 307,
+   "pm_vehicle_hours": 234
+  },
+  {
+   "route": "54B",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.3249,
+   "mid_mph": 11.5808,
+   "pm_mph": 9.3358,
+   "peak_mph": 10.2611,
+   "am_vehicle_hours": 162,
+   "mid_vehicle_hours": 321,
+   "pm_vehicle_hours": 203
+  },
+  {
+   "route": "X9",
+   "express": true,
+   "top20": false,
+   "am_mph": 10.8438,
+   "mid_mph": 12.1259,
+   "pm_mph": 9.6137,
+   "peak_mph": 10.2613,
+   "am_vehicle_hours": 572,
+   "mid_vehicle_hours": 253,
+   "pm_vehicle_hours": 536
+  },
+  {
+   "route": "59",
+   "express": false,
+   "top20": false,
+   "am_mph": 10.7196,
+   "mid_mph": 11.3324,
+   "pm_mph": 10.1051,
+   "peak_mph": 10.4311,
+   "am_vehicle_hours": 242,
+   "mid_vehicle_hours": 359,
+   "pm_vehicle_hours": 232
+  },
+  {
+   "route": "95",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.0923,
+   "mid_mph": 10.976,
+   "pm_mph": 9.8891,
+   "peak_mph": 10.4793,
+   "am_vehicle_hours": 375,
+   "mid_vehicle_hours": 776,
+   "pm_vehicle_hours": 397
+  },
+  {
+   "route": "71",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.1325,
+   "mid_mph": 10.8427,
+   "pm_mph": 9.7599,
+   "peak_mph": 10.4846,
+   "am_vehicle_hours": 379,
+   "mid_vehicle_hours": 612,
+   "pm_vehicle_hours": 347
+  },
+  {
+   "route": "97",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.5016,
+   "mid_mph": 11.1698,
+   "pm_mph": 9.8276,
+   "peak_mph": 10.6112,
+   "am_vehicle_hours": 161,
+   "mid_vehicle_hours": 318,
+   "pm_vehicle_hours": 197
+  },
+  {
+   "route": "39",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.0775,
+   "mid_mph": 12.1207,
+   "pm_mph": 10.5721,
+   "peak_mph": 10.8221,
+   "am_vehicle_hours": 168,
+   "mid_vehicle_hours": 257,
+   "pm_vehicle_hours": 196
+  },
+  {
+   "route": "6",
+   "express": true,
+   "top20": false,
+   "am_mph": 11.4269,
+   "mid_mph": 12.2104,
+   "pm_mph": 10.2698,
+   "peak_mph": 10.8647,
+   "am_vehicle_hours": 381,
+   "mid_vehicle_hours": 681,
+   "pm_vehicle_hours": 376
+  },
+  {
+   "route": "201",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.5403,
+   "mid_mph": 11.8334,
+   "pm_mph": 10.4313,
+   "peak_mph": 10.9907,
+   "am_vehicle_hours": 173,
+   "mid_vehicle_hours": 213,
+   "pm_vehicle_hours": 172
+  },
+  {
+   "route": "24",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.4257,
+   "mid_mph": 11.555,
+   "pm_mph": 10.7431,
+   "peak_mph": 11.0782,
+   "am_vehicle_hours": 249,
+   "mid_vehicle_hours": 417,
+   "pm_vehicle_hours": 284
+  },
+  {
+   "route": "8A",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.8753,
+   "mid_mph": 11.5308,
+   "pm_mph": 10.3927,
+   "peak_mph": 11.145,
+   "am_vehicle_hours": 166,
+   "mid_vehicle_hours": 340,
+   "pm_vehicle_hours": 167
+  },
+  {
+   "route": "111",
+   "express": false,
+   "top20": false,
+   "am_mph": 11.732,
+   "mid_mph": 12.3676,
+   "pm_mph": 11.1509,
+   "peak_mph": 11.4476,
+   "am_vehicle_hours": 167,
+   "mid_vehicle_hours": 268,
+   "pm_vehicle_hours": 163
+  },
+  {
+   "route": "52A",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.2673,
+   "mid_mph": 12.3287,
+   "pm_mph": 10.9957,
+   "peak_mph": 11.5584,
+   "am_vehicle_hours": 243,
+   "mid_vehicle_hours": 348,
+   "pm_vehicle_hours": 318
+  },
+  {
+   "route": "81W",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.1177,
+   "mid_mph": 12.8277,
+   "pm_mph": 11.1036,
+   "peak_mph": 11.611,
+   "am_vehicle_hours": 117,
+   "mid_vehicle_hours": 185,
+   "pm_vehicle_hours": 127
+  },
+  {
+   "route": "53A",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.8748,
+   "mid_mph": 13.0169,
+   "pm_mph": 11.0618,
+   "peak_mph": 11.9356,
+   "am_vehicle_hours": 244,
+   "mid_vehicle_hours": 355,
+   "pm_vehicle_hours": 279
+  },
+  {
+   "route": "106",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.446,
+   "mid_mph": 12.0768,
+   "pm_mph": 11.4781,
+   "peak_mph": 11.9875,
+   "am_vehicle_hours": 107,
+   "mid_vehicle_hours": 182,
+   "pm_vehicle_hours": 104
+  },
+  {
+   "route": "103",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.4161,
+   "mid_mph": 12.2878,
+   "pm_mph": 11.6291,
+   "peak_mph": 12.0337,
+   "am_vehicle_hours": 168,
+   "mid_vehicle_hours": 230,
+   "pm_vehicle_hours": 164
+  },
+  {
+   "route": "44",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.4802,
+   "mid_mph": 12.4343,
+   "pm_mph": 11.6986,
+   "peak_mph": 12.0505,
+   "am_vehicle_hours": 185,
+   "mid_vehicle_hours": 313,
+   "pm_vehicle_hours": 231
+  },
+  {
+   "route": "112",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.4101,
+   "mid_mph": 13.3232,
+   "pm_mph": 11.7459,
+   "peak_mph": 12.0877,
+   "am_vehicle_hours": 146,
+   "mid_vehicle_hours": 231,
+   "pm_vehicle_hours": 148
+  },
+  {
+   "route": "34",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.5242,
+   "mid_mph": 12.8988,
+   "pm_mph": 11.8993,
+   "peak_mph": 12.2049,
+   "am_vehicle_hours": 226,
+   "mid_vehicle_hours": 387,
+   "pm_vehicle_hours": 216
+  },
+  {
+   "route": "26",
+   "express": true,
+   "top20": false,
+   "am_mph": 12.7179,
+   "mid_mph": 14.1127,
+   "pm_mph": 11.7432,
+   "peak_mph": 12.4646,
+   "am_vehicle_hours": 317,
+   "mid_vehicle_hours": 319,
+   "pm_vehicle_hours": 290
+  },
+  {
+   "route": "119",
+   "express": false,
+   "top20": false,
+   "am_mph": 12.9873,
+   "mid_mph": 12.8476,
+   "pm_mph": 12.0976,
+   "peak_mph": 12.585,
+   "am_vehicle_hours": 201,
+   "mid_vehicle_hours": 341,
+   "pm_vehicle_hours": 173
+  },
+  {
+   "route": "115",
+   "express": false,
+   "top20": false,
+   "am_mph": 13.5101,
+   "mid_mph": 14.0785,
+   "pm_mph": 12.5437,
+   "peak_mph": 13.0398,
+   "am_vehicle_hours": 161,
+   "mid_vehicle_hours": 273,
+   "pm_vehicle_hours": 155
+  },
+  {
+   "route": "30",
+   "express": false,
+   "top20": false,
+   "am_mph": 13.4723,
+   "mid_mph": 14.0507,
+   "pm_mph": 12.9903,
+   "peak_mph": 13.2289,
+   "am_vehicle_hours": 250,
+   "mid_vehicle_hours": 428,
+   "pm_vehicle_hours": 248
+  },
+  {
+   "route": "J14",
+   "express": true,
+   "top20": false,
+   "am_mph": 14.3231,
+   "mid_mph": 15.4378,
+   "pm_mph": 13.4956,
+   "peak_mph": 13.9327,
+   "am_vehicle_hours": 487,
+   "mid_vehicle_hours": 744,
+   "pm_vehicle_hours": 456
+  }
+ ],
+ "express": [
+  {
+   "express": "X9",
+   "local": "9",
+   "express_vehicle_hours": {
+    "am": 572,
+    "mid": 253,
+    "pm": 536
+   },
+   "am": {
+    "cells": 121,
+    "express_mph": 10.775,
+    "local_mph": 9.848,
+    "advantage": 0.0942
+   },
+   "pm": {
+    "cells": 121,
+    "express_mph": 9.516,
+    "local_mph": 8.541,
+    "advantage": 0.1141
+   }
+  },
+  {
+   "express": "X49",
+   "local": "49",
+   "express_vehicle_hours": {
+    "am": 702,
+    "mid": 24,
+    "pm": 732
+   },
+   "am": {
+    "cells": 120,
+    "express_mph": 10.549,
+    "local_mph": 9.795,
+    "advantage": 0.077
+   },
+   "pm": {
+    "cells": 123,
+    "express_mph": 9.234,
+    "local_mph": 8.603,
+    "advantage": 0.0733
+   }
+  },
+  {
+   "express": "X4",
+   "local": "4",
+   "express_vehicle_hours": {
+    "am": 405,
+    "mid": 66,
+    "pm": 437
+   },
+   "am": {
+    "cells": 93,
+    "express_mph": 10.769,
+    "local_mph": 9.523,
+    "advantage": 0.1308
+   },
+   "pm": {
+    "cells": 93,
+    "express_mph": 9.644,
+    "local_mph": 8.441,
+    "advantage": 0.1425
+   }
+  }
+ ],
+ "sensitivity": [
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "53",
+   "peak_mph": 8.8218,
+   "mid_mph": 9.7784
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "9",
+   "peak_mph": 9.233,
+   "mid_mph": 10.1132
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "79",
+   "peak_mph": 9.0962,
+   "mid_mph": 9.4339
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "66",
+   "peak_mph": 7.477,
+   "mid_mph": 8.1846
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "8",
+   "peak_mph": 8.3795,
+   "mid_mph": 9.0389
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "3",
+   "peak_mph": 8.9224,
+   "mid_mph": 9.415
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "77",
+   "peak_mph": 7.8906,
+   "mid_mph": 9.3879
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "4",
+   "peak_mph": 9.6062,
+   "mid_mph": 9.6136
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "20",
+   "peak_mph": 8.0822,
+   "mid_mph": 8.2983
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "49",
+   "peak_mph": 9.1895,
+   "mid_mph": 10.6251
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "22",
+   "peak_mph": 7.1187,
+   "mid_mph": 7.778
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "82",
+   "peak_mph": 8.1688,
+   "mid_mph": 9.809
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "63",
+   "peak_mph": 8.6434,
+   "mid_mph": 9.259
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "151",
+   "peak_mph": 6.9532,
+   "mid_mph": 7.3484
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "72",
+   "peak_mph": 7.5083,
+   "mid_mph": 8.4545
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "60",
+   "peak_mph": 7.796,
+   "mid_mph": 8.3215
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "146",
+   "peak_mph": 7.9316,
+   "mid_mph": 8.9487
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "36",
+   "peak_mph": 6.4642,
+   "mid_mph": 6.6378
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "12",
+   "peak_mph": 8.4417,
+   "mid_mph": 9.0111
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "47",
+   "peak_mph": 9.1232,
+   "mid_mph": 9.9834
+  },
+  {
+   "variant": "main (20 weekdays)",
+   "days": 20,
+   "route": "TOP20",
+   "peak_mph": 8.3028,
+   "mid_mph": 9.0425
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "53",
+   "peak_mph": 8.8446,
+   "mid_mph": 9.7806
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "9",
+   "peak_mph": 9.255,
+   "mid_mph": 10.0979
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "79",
+   "peak_mph": 9.1011,
+   "mid_mph": 9.4337
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "66",
+   "peak_mph": 7.5077,
+   "mid_mph": 8.2007
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "8",
+   "peak_mph": 8.3995,
+   "mid_mph": 9.0427
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "3",
+   "peak_mph": 8.9249,
+   "mid_mph": 9.4309
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "77",
+   "peak_mph": 7.9245,
+   "mid_mph": 9.4012
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "4",
+   "peak_mph": 9.5947,
+   "mid_mph": 9.6293
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "20",
+   "peak_mph": 8.097,
+   "mid_mph": 8.315
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "49",
+   "peak_mph": 9.209,
+   "mid_mph": 10.6226
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "22",
+   "peak_mph": 7.1355,
+   "mid_mph": 7.7736
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "82",
+   "peak_mph": 8.177,
+   "mid_mph": 9.7924
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "63",
+   "peak_mph": 8.6486,
+   "mid_mph": 9.2609
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "151",
+   "peak_mph": 6.9588,
+   "mid_mph": 7.3415
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "72",
+   "peak_mph": 7.5378,
+   "mid_mph": 8.4689
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "60",
+   "peak_mph": 7.8245,
+   "mid_mph": 8.3307
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "146",
+   "peak_mph": 7.938,
+   "mid_mph": 9.0035
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "36",
+   "peak_mph": 6.4918,
+   "mid_mph": 6.6238
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "12",
+   "peak_mph": 8.4588,
+   "mid_mph": 9.0052
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "47",
+   "peak_mph": 9.1376,
+   "mid_mph": 10.0323
+  },
+  {
+   "variant": "strict coverage (17 weekdays)",
+   "days": 17,
+   "route": "TOP20",
+   "peak_mph": 8.3199,
+   "mid_mph": 9.0492
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "53",
+   "peak_mph": 8.8649,
+   "mid_mph": 9.7873
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "9",
+   "peak_mph": 9.2537,
+   "mid_mph": 10.1189
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "79",
+   "peak_mph": 9.0998,
+   "mid_mph": 9.4429
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "66",
+   "peak_mph": 7.5079,
+   "mid_mph": 8.1861
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "8",
+   "peak_mph": 8.401,
+   "mid_mph": 9.0399
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "3",
+   "peak_mph": 8.9521,
+   "mid_mph": 9.409
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "77",
+   "peak_mph": 7.917,
+   "mid_mph": 9.3819
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "4",
+   "peak_mph": 9.6277,
+   "mid_mph": 9.6211
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "20",
+   "peak_mph": 8.1131,
+   "mid_mph": 8.3107
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "49",
+   "peak_mph": 9.216,
+   "mid_mph": 10.6309
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "22",
+   "peak_mph": 7.1499,
+   "mid_mph": 7.7574
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "82",
+   "peak_mph": 8.2211,
+   "mid_mph": 9.8127
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "63",
+   "peak_mph": 8.6724,
+   "mid_mph": 9.2749
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "151",
+   "peak_mph": 6.9826,
+   "mid_mph": 7.3285
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "72",
+   "peak_mph": 7.5235,
+   "mid_mph": 8.4478
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "60",
+   "peak_mph": 7.8361,
+   "mid_mph": 8.3404
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "146",
+   "peak_mph": 7.9826,
+   "mid_mph": 8.9144
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "36",
+   "peak_mph": 6.4851,
+   "mid_mph": 6.625
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "12",
+   "peak_mph": 8.4735,
+   "mid_mph": 9.0177
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "47",
+   "peak_mph": 9.128,
+   "mid_mph": 9.984
+  },
+  {
+   "variant": "include Oct 12 holiday (21 weekdays)",
+   "days": 21,
+   "route": "TOP20",
+   "peak_mph": 8.3315,
+   "mid_mph": 9.0426
+  }
+ ]
+}

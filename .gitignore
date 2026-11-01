@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+local/
+raw/
+data/sources/
+*.duckdb*
+*.parquet
+*.ndjson*
+dist/
+.DS_Store
+.pytest_cache/
